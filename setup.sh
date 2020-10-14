@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 # This script installs enclave on Ubuntu, Debian, CentOS, Amazon Linux 2 (x64), Arch Linux and Raspbian 10 (arm).
 #
 # Pass a version number arugment to install a specific version.
