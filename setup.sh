@@ -56,7 +56,7 @@ install_dependencies() {
 }
 
 get_version() {
-    latest=$(wget -qO- https://install.enclave.io/latest)
+    latest=$(wget -qO- https://install.enclave.io/latest/version)
     if [[ -n "${latest}" ]]; then
         echo "${latest}"
     else
