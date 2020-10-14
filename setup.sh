@@ -6,7 +6,7 @@
 #
 # Pass a license key for an unattended installation.
 # $ ./install.sh -l XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
-​
+
 set -euo pipefail
 # Output green message prefixed with [+]
 info() { echo -e "\e[92m[+] ${1:-}\e[0m"; }
@@ -14,16 +14,16 @@ info() { echo -e "\e[92m[+] ${1:-}\e[0m"; }
 warning() { echo -e "\e[33m[-] ${1:-}\e[0m"; }
 # Output red message prefixed with [!] and exit
 error() { echo -e >&2 "\e[31m[!] ${1:-}\e[0m"; exit 1; }
-​
+
 # Do not run this script as root
 [[ "${EUID}" -eq  0 ]] && warning "Script running as root, you should run this as an unprivileged user."
-​
+
 usage() {
     echo "Usage: $0 [-a ARCH] [-l LICENSE_KEY] [-v VERSION]"
     [[ "${1:-}" == "error" ]] && exit 1
     exit 0
 }
-​
+
 quick_start() {
     info "Installation complete."
     echo -e "\n\e[1mLearn how to use Enclave at https://enclave.io/docs/\e[0m"
@@ -31,7 +31,7 @@ quick_start() {
     echo -e "    \e[1menclave add [PEER_NAME] -d [DESCRIPTION]\e[0m to authorise a connection to another system running enclave."
     echo -e "    \e[1menclave status\e[0m for status.\n"
 }
-​
+
 install_dependencies() {
     info "Checking/installing dependencies."
     deps=(tar wget)
@@ -42,7 +42,7 @@ install_dependencies() {
     elif grep -qi "debian" /etc/os-release; then
         info "Updating package index."
         sudo apt-get update -qq
-        # Different versions of Debian/Ubuntu ship different versions of libicu 
+        # Different versions of Debian/Ubuntu ship different versions of libicu
         deps+=("$(apt-cache search -n "^libicu[0-9]+$" | cut -d" " -f1)")
         # RaspberryPi OS/Raspbian needs libsodium-dev
         if grep -qi "raspbian" /etc/os-release; then 
@@ -54,13 +54,13 @@ install_dependencies() {
         sudo pacman -Syq --noconfirm --needed "${deps[@]}"
     fi
 }
-​
+
 get_version() {
     latest=$(wget -qO- https://install.enclave.io/latest)
     if [[ -n "${latest}" ]]; then
         echo "${latest}"
     else
-        error "Unsupported architecture: $(uname -m). Aborting." ;;
+        error "Unsupported architecture: $(uname -m). Aborting."
     fi
 }
 
@@ -72,7 +72,7 @@ get_arch() {
         *) error "Unsupported architecture: $(uname -m). Aborting." ;;
     esac
 }
-​
+
 install_enclave() {
     # Stop supervisor service before install / upgrade (don't care if this fails)
     if sudo systemctl stop enclave >/dev/null 2>&1; then
@@ -97,10 +97,10 @@ install_enclave() {
 [Unit]
 Description=Enclave
 After=network.target
-​
+
 [Service]
 ExecStart=/usr/bin/enclave supervisor-service
-​
+
 [Install]
 WantedBy=multi-user.target
 EOF
@@ -114,7 +114,7 @@ EOF
     # Give the background service a couple of seconds to start
     sleep 2 
 }
-​
+
 license_enclave() {
     if sudo test -f /etc/enclave/profiles/Universe.profile; then
         info "Existing identity /etc/enclave/profiles/Universe.profile detected."
@@ -129,7 +129,7 @@ license_enclave() {
         fi
     fi
 }
-​
+
 start_fabric() {
     info "Starting Enclave Fabric."
     if sudo enclave start -w; then
@@ -138,7 +138,7 @@ start_fabric() {
         error "Failed to start Enclave fabric."
     fi
 }
-​
+
 while getopts "a:v:l:h" options
 do
     case "${options}" in
@@ -151,9 +151,9 @@ do
     esac
 done
 shift $((OPTIND -1))
-​
+
 ENCLAVE_ARCH="${ENCLAVE_ARCH:-$(get_arch)}"
-​
+
 install_dependencies
 install_enclave
 license_enclave
