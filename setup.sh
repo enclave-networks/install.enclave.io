@@ -81,7 +81,7 @@ install_enclave() {
     
     # Get correct version and build url
     ENCLAVE_VERSION="${ENCLAVE_VERSION:-$(get_version)}"
-    BINARY_URL="https://s3.eu-west-2.amazonaws.com/enclave.io/release/enclave_linux-${ENCLAVE_ARCH}-${ENCLAVE_VERSION}.tar.gz"
+    BINARY_URL="https://release.enclave.io/enclave_linux-${ENCLAVE_ARCH}-${ENCLAVE_VERSION}.tar.gz"
     
     # Download archive to /tmp and extract enclave to /usr/bin
     info "Installing enclave-${ENCLAVE_VERSION}."
