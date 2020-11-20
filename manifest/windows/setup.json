@@ -1,6 +1,5 @@
 {
   "ProductName": "Enclave Setup",
-  "Platform": "Windows",
   "DocumentHash": null,
   "DocumentSignature": null,
   "TimeToLive": 60,
@@ -16,6 +15,7 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-2020.9.16.0.exe",
           "Hash": "z3zCyezIy/ISn/vSAlc79dkG3FNhmQPhLu4xn51Uq5s="
@@ -34,6 +34,7 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-2020.9.17.0.exe",
           "Hash": "OtouEKLsPU3iMug+yrOkYYA+tQxv/xlVzl6zgDCNkug="
@@ -52,6 +53,7 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-2020.9.23.0.exe",
           "Hash": "1hUmhQ4Sx42yHCzPKVkgzCFQ0gky0KwNfiz+MRpMf6w="
@@ -70,6 +72,7 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-2020.9.30.0.exe",
           "Hash": "Ev1Cp5I1YNCXEdwACR+en88xpCXxWlstAo+Z4u8JGU8="
@@ -88,6 +91,7 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-rc-2020.10.12.0.exe",
           "Hash": "2iaEbE8YHti0rIanQfYbYzcJ6T3yYem7JpXTRTMEAJc="
@@ -106,6 +110,7 @@
       "TargetEnvironment": "Staging",
       "Packages": [
         {
+          "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-2020.10.14.0.exe",
           "Hash": "erF4hSuFML03RsA72pxVCKsa5XL7Mp+u4L37/sHY+Ko="
@@ -124,6 +129,7 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-2020.10.20.0.exe",
           "Hash": "AVzqCKgZne2/3iKhZwZhj/vsWqHd0TMfU24YijVD8G8="
@@ -142,6 +148,7 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-2020.10.27.0.exe",
           "Hash": "wtSzRUqUNV/OP005bi9d2juoMDTm+EebicOYynuGjmg="

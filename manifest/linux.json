@@ -1,6 +1,5 @@
 {
   "ProductName": "Enclave",
-  "Platform": "Linux",
   "DocumentHash": null,
   "DocumentSignature": null,
   "TimeToLive": 60,
@@ -16,6 +15,7 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-2020.9.16.0.tar.gz",
           "Hash": "n35bxZ5ALhtkpOYJKQwRNK2FJeMFOj0WHKKDG0yRh2I="
@@ -34,16 +34,19 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-2020.9.17.0.tar.gz",
           "Hash": "rbX9QR/suBTXCqeBbjwm34o/hUtH9ccPYdTgIOshiF8="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-2020.9.17.0.tar.gz",
           "Hash": "TIDtrAvWe25jrVX4th8mfBGD1uNkJuBb3RdAxAMJBr4="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-2020.9.17.0.tar.gz",
           "Hash": "RwdoWTiuyBtlq5w3MyKW5IsfJDsCufh1uZNOj3KUGow="
@@ -62,16 +65,19 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-2020.9.23.0.tar.gz",
           "Hash": "4ByHsLX2M6WNx9gjMyMS5pjaZzUk1vsfcleR1d3tuxk="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-2020.9.23.0.tar.gz",
           "Hash": "e5E7Lv2awa5tOsARBiDug4NRN5f1bUUt0dJCSFZMjT0="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-2020.9.23.0.tar.gz",
           "Hash": "YjhL0KN0BxENcCKVQPswVJ8oOChpgFiCMWe2RfT4aIA="
@@ -90,16 +96,19 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-2020.9.30.0.tar.gz",
           "Hash": "QNDfWX6TX63Rp/krhkIDauZ3YgJmZqG9EQnbnUOQQEk="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-2020.9.30.0.tar.gz",
           "Hash": "SGscDeWB8eagE9DEiyOOqs7QfiBXZOs3y9jj8KDqb9k="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-2020.9.30.0.tar.gz",
           "Hash": "491uM+agCzKmkLjNpQOYTYxXCUPPyOyTdovE4YuuWWM="
@@ -118,16 +127,19 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-rc-2020.10.12.0.tar.gz",
           "Hash": "BZZe26e2+FuPNtTnU0OYiwkJ0BuP/OuhM1H2fTdeGWQ="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-rc-2020.10.12.0.tar.gz",
           "Hash": "cpX0fPioC3nAEf2B3O/6khV7sDkDicdxYmpZKCiwhnY="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-rc-2020.10.12.0.tar.gz",
           "Hash": "cXQbDTpkDw5YggsAGmc84iEBhNYHqQ5ILZWt41ZE74E="
@@ -146,16 +158,19 @@
       "TargetEnvironment": "Staging",
       "Packages": [
         {
+          "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-2020.10.14.0.tar.gz",
           "Hash": "HBndWp7u4gJaLpEPE7uJe+9vliKxgWGzzlSvvcfb6Pc="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-2020.10.14.0.tar.gz",
           "Hash": "GGCCr/7tyDAykdSCgDvn0dGm32s7jZULXCxAK66qfWM="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-2020.10.14.0.tar.gz",
           "Hash": "59iqnYGDFoSpplm/b6WpfrpJrHBHvRp9NZECq6ss0G8="
@@ -174,16 +189,19 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-2020.10.20.0.tar.gz",
           "Hash": "uM5Nwz5ekv+7INra9Pc24w5pGAC5yMSaTX87gqFD+68="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-2020.10.20.0.tar.gz",
           "Hash": "Beebrsy2nb0QrW3f9KWLeRNVhDl0wc08vDxzzapRnEw="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-2020.10.20.0.tar.gz",
           "Hash": "O/gFZQny83v3R/GtO5zMghjw0RohUOkZZk/lWv3Q6vE="
@@ -202,16 +220,19 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
+          "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-2020.10.27.0.tar.gz",
           "Hash": "4Mh0ePDuvSfqsCzL1iLkixzPoPuDVaucA95ZnpVKVwI="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-2020.10.27.0.tar.gz",
           "Hash": "c7nvFLNfpmMu8A/J+CnlQVl6Uvgfcj1XrdTJUHIlQJM="
         },
         {
+          "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-2020.10.27.0.tar.gz",
           "Hash": "vpyMLrWRuEAAOs2p3pAuulkNLg1sTeOOgaKRzaTjVO8="
