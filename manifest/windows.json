@@ -18,7 +18,8 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-2020.9.16.0.zip",
-          "Hash": "UC7CsKMXB2nyr/9X3EwxcDISYPbQZRIn2xGG61QA0sU="
+          "Hash": "UC7CsKMXB2nyr/9X3EwxcDISYPbQZRIn2xGG61QA0sU=",
+          "HashAlg": "Sha256"
         }
       ],
       "ReleaseNotes": null
@@ -37,7 +38,8 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-2020.9.17.0.zip",
-          "Hash": "4t1gM0jF+xlAJuW3K8smQWOamLnkwAM2p6eH4T7K/os="
+          "Hash": "4t1gM0jF+xlAJuW3K8smQWOamLnkwAM2p6eH4T7K/os=",
+          "HashAlg": "Sha256"
         }
       ],
       "ReleaseNotes": null
@@ -56,7 +58,8 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-2020.9.23.0.zip",
-          "Hash": "j5uFaJiu8wgWs2zFQj3yAgU0L07p4aIIxo3xu7f9GzU="
+          "Hash": "j5uFaJiu8wgWs2zFQj3yAgU0L07p4aIIxo3xu7f9GzU=",
+          "HashAlg": "Sha256"
         }
       ],
       "ReleaseNotes": null
@@ -75,7 +78,8 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-2020.9.30.0.zip",
-          "Hash": "QqTEvkSzPVAqC9eFdAabnYiYULF0R9NHP3THLlsznlg="
+          "Hash": "QqTEvkSzPVAqC9eFdAabnYiYULF0R9NHP3THLlsznlg=",
+          "HashAlg": "Sha256"
         }
       ],
       "ReleaseNotes": null
@@ -94,7 +98,8 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-rc-2020.10.12.0.zip",
-          "Hash": "POPh/NV5U3EG/SH+A03SF+zNb2qX2bvOqC0a51UcfFY="
+          "Hash": "POPh/NV5U3EG/SH+A03SF+zNb2qX2bvOqC0a51UcfFY=",
+          "HashAlg": "Sha256"
         }
       ],
       "ReleaseNotes": null
@@ -113,7 +118,8 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-2020.10.14.0.zip",
-          "Hash": "XUxzmEnNgFJWJa+VrwuzzojS6sfNuTo+rAm04Kurrn8="
+          "Hash": "XUxzmEnNgFJWJa+VrwuzzojS6sfNuTo+rAm04Kurrn8=",
+          "HashAlg": "Sha256"
         }
       ],
       "ReleaseNotes": null
@@ -132,7 +138,8 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-2020.10.20.0.zip",
-          "Hash": "3HlQjTXZjryPhLMXBaFFmHIkMTRNx2tq1KB8yHNoiDM="
+          "Hash": "3HlQjTXZjryPhLMXBaFFmHIkMTRNx2tq1KB8yHNoiDM=",
+          "HashAlg": "Sha256"
         }
       ],
       "ReleaseNotes": null
@@ -151,7 +158,8 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-2020.10.27.0.zip",
-          "Hash": "NjqjAn23v5sfFJ4iC1gloZ4oTJuKuyfU+tdzVRzzRlw="
+          "Hash": "NjqjAn23v5sfFJ4iC1gloZ4oTJuKuyfU+tdzVRzzRlw=",
+          "HashAlg": "Sha256"
         }
       ],
       "ReleaseNotes": null
