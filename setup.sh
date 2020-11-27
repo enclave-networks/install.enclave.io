@@ -55,7 +55,7 @@ install_apt_package() {
     wget -qO- https://packages.enclave.io/apt/pubkey.gpg | sudo apt-key add - >/dev/null 2>&1
     info "Adding the Enclave package repository."
     # shellcheck disable=SC2024
-    wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_PKG_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_PKG_LIST}" >/dev//null
+    wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_PKG_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_PKG_LIST}" >/dev/null
     
     info "Updating package index"
     sudo apt-get update -qq
