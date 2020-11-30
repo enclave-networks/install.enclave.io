@@ -163,6 +163,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2020,
+      "MinorVersion": 11,
+      "BuildVersion": 30,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1606754016,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Unknown",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2020.11.30.0.exe",
+          "Hash": "7LUDumV3R3BGvvG5S2SxWzfuh7gxJMamKPneSmeDjn8=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
