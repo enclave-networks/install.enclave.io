@@ -175,7 +175,7 @@
       "TargetEnvironment": "Production",
       "Packages": [
         {
-          "Platform": "Unknown",
+          "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-rc-2020.11.30.0.exe",
           "Hash": "7LUDumV3R3BGvvG5S2SxWzfuh7gxJMamKPneSmeDjn8=",
