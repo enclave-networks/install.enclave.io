@@ -363,6 +363,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2020,
+      "MinorVersion": 12,
+      "BuildVersion": 1,
+      "RevisionVersion": 497,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1606847804,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2020.12.01.497.tar.gz",
+          "Hash": "JKfO6s8SliB3yujDPtgzj+WkyqugT36zaqf/X/WIyfU=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2020.12.01.497.tar.gz",
+          "Hash": "1GzgHizfLl9ICTDo4fHMRiZwGQ6DP5pxbuspQrUQkLk=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2020.12.01.497.tar.gz",
+          "Hash": "SxqcmlilNDBaWbdYNPGsZ7lpcfz9LIDtBH9w1Q4cEfU=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
