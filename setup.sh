@@ -43,6 +43,21 @@ get_distro_family() {
     fi
 }
 
+license_enclave() {
+    if sudo test -f /etc/enclave/profiles/Universe.profile; then
+        info "Existing identity /etc/enclave/profiles/Universe.profile detected."
+    else
+        if [[ -z "${ENCLAVE_LICENSE:-}" ]]; then 
+            warning "No license key supplied."
+            warning "Enclave requires a licence key in order to request a certificate and enroll this system into your account."
+        fi
+        # Check Enclave licenses successfully
+        if ! sudo enclave license "${ENCLAVE_LICENSE:-}"; then
+            error "Failed to license Enclave."
+        fi
+    fi
+}
+
 install_apt_package() {
     # Install the pre-requisites for an apt install
     info "Updating package index."
@@ -55,7 +70,7 @@ install_apt_package() {
     wget -qO- https://packages.enclave.io/apt/pubkey.gpg | sudo apt-key add - >/dev/null 2>&1
     info "Adding the Enclave package repository."
     # shellcheck disable=SC2024
-    wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_PKG_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_PKG_LIST}" >/dev/null
+    wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_DEB_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_DEB_LIST}" >/dev/null
     
     info "Updating package index"
     sudo apt-get update -qq
@@ -81,6 +96,42 @@ install_apt_package() {
     exit 0
 }
 
+install_rpm_package() {
+    info "Checking dependencies."
+    sudo yum install -y wget
+    
+    # Download the package list and install into the system
+    info "Installing Enclave repository list."
+    # shellcheck disable=SC2024
+    wget -qO- "https://packages.enclave.io/rpm/${ENCLAVE_RPM_LIST}" | sudo tee "/etc/yum.repos.d/${ENCLAVE_RPM_LIST}" >/dev/null
+
+    info "Importing the Enclave GPG RPM signing key."
+    sudo rpm --import https://packages.enclave.io/rpm/pubkey.gpg >/dev/null 2>&1
+
+    # Export the license variable if set so it gets picked up
+    # by the postinst script in the rpm
+    if [[ -z "${ENCLAVE_LICENSE:-}" ]]; then
+        export ENCLAVE_LICENSE
+    fi
+
+    # Check if the user specified an Enclave version to install
+    if [[ -n "${ENCLAVE_VERSION:-}" ]]; then
+        # Install specified Enclave version
+        info "Installing Enclave package (${ENCLAVE_VERSION})."
+        sudo yum install -y "enclave-${ENCLAVE_VERSION}"
+    else
+        # Install latest Enclave
+        info "Installing Enclave package (latest)."
+        sudo yum install -y enclave
+    fi
+
+    # Licensing isn't as integrated into the RPM install, try to license
+    license_enclave
+
+    # Do not continue with rest of setup as rpm handles all of it
+    exit 0
+}
+
 preinstall() {
     info "Checking/installing dependencies."
     deps=(tar wget)
@@ -90,17 +141,16 @@ preinstall() {
             info "Debian-based distro detected. Installing via package manager."
             install_apt_package
             ;;
+        "rhel")
+            info "Red Hat based distro detected. Installing via package manager."
+            install_rpm_package
+            ;;
         "raspbian")
             sudo apt-get update -qq
             # Different versions of Raspbian ship different versions of libicu
             deps+=("$(apt-cache search -n "^libicu[0-9]+$" | cut -d" " -f1)" "libsodium-dev")
             # Install dependencies
             sudo apt-get install -yq "${deps[@]}"
-            ;;
-        "rhel")
-            # Install deps for rhel/fedora/centos 
-            deps+=(libicu)
-            sudo yum install -y "${deps[@]}"
             ;;
         "arch")
             # Install arch linux deps
@@ -173,21 +223,6 @@ EOF
     sleep 2 
 }
 
-license_enclave() {
-    if sudo test -f /etc/enclave/profiles/Universe.profile; then
-        info "Existing identity /etc/enclave/profiles/Universe.profile detected."
-    else
-        if [[ -z "${ENCLAVE_LICENSE:-}" ]]; then 
-            warning "No license key supplied."
-            warning "Enclave requires a licence key in order to request a certificate and enroll this system into your account."
-        fi
-        # Check Enclave licenses successfully
-        if ! sudo enclave license "${ENCLAVE_LICENSE:-}"; then
-            error "Failed to license Enclave."
-        fi
-    fi
-}
-
 start_fabric() {
     info "Starting Enclave Fabric."
     if sudo enclave start -w; then
@@ -203,7 +238,10 @@ do
         a) ENCLAVE_ARCH="${OPTARG}" ;;
         v) ENCLAVE_VERSION="${OPTARG}" ;;
         l) ENCLAVE_LICENSE="${OPTARG}" ;;
-        u) ENCLAVE_PKG_LIST="enclave.unstable.list" ;;
+        u) 
+            ENCLAVE_DEB_LIST="enclave.unstable.list" 
+            ENCLAVE_RPM_LIST="enclave.unstable.repo" 
+            ;;
         h) usage ;;
         :) usage error ;;
         *) usage error ;;
@@ -212,7 +250,8 @@ done
 shift $((OPTIND -1))
 
 ENCLAVE_ARCH="${ENCLAVE_ARCH:-$(get_arch)}"
-ENCLAVE_PKG_LIST="${ENCLAVE_PKG_LIST:-enclave.stable.list}"
+ENCLAVE_DEB_LIST="${ENCLAVE_DEB_LIST:-enclave.stable.list}"
+ENCLAVE_RPM_LIST="${ENCLAVE_RPM_LIST:-enclave.repo}"
 
 # Check if a package is available and install,
 # if no package, install dependencies
