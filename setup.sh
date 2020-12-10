@@ -67,7 +67,7 @@ install_apt_package() {
 
     # Add and trust the Enclave package repository
     info "Adding Enclave GPG package signing key."
-    wget -qO- https://packages.enclave.io/apt/pubkey.gpg | sudo apt-key add - >/dev/null 2>&1
+    wget -qO- https://packages.enclave.io/apt/enclave.stable.gpg | sudo apt-key add - >/dev/null 2>&1
     info "Adding the Enclave package repository."
     # shellcheck disable=SC2024
     wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_DEB_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_DEB_LIST}" >/dev/null
@@ -106,7 +106,7 @@ install_rpm_package() {
     wget -qO- "https://packages.enclave.io/rpm/${ENCLAVE_RPM_LIST}" | sudo tee "/etc/yum.repos.d/${ENCLAVE_RPM_LIST}" >/dev/null
 
     info "Importing the Enclave GPG RPM signing key."
-    sudo rpm --import https://packages.enclave.io/rpm/pubkey.gpg >/dev/null 2>&1
+    sudo rpm --import https://packages.enclave.io/rpm/enclave.stable.gpg >/dev/null 2>&1
 
     # Export the license variable if set so it gets picked up
     # by the postinst script in the rpm
