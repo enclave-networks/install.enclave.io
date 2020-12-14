@@ -139,13 +139,13 @@ install_enclave() {
     
     # Get correct version and build url
     ENCLAVE_VERSION="${ENCLAVE_VERSION:-$(get_version)}"
-    BINARY_URL="https://release.enclave.io/enclave_linux-${ENCLAVE_ARCH}-${ENCLAVE_VERSION}.tar.gz"
+    BINARY_URL="https://release.enclave.io/enclave_linux-${ENCLAVE_ARCH}-stable-${ENCLAVE_VERSION}.tar.gz"
     
     # Download archive to /tmp and extract enclave to /usr/bin
     info "Installing enclave-${ENCLAVE_VERSION}."
-    wget -qO "/tmp/enclave_linux-${ENCLAVE_ARCH}-$ENCLAVE_VERSION.tar.gz" "${BINARY_URL}"
-    sudo tar xvzf "/tmp/enclave_linux-${ENCLAVE_ARCH}-$ENCLAVE_VERSION.tar.gz" -C /usr/bin/ > /dev/null 2>&1
-    rm "/tmp/enclave_linux-${ENCLAVE_ARCH}-${ENCLAVE_VERSION}.tar.gz"
+    wget -qO "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-$ENCLAVE_VERSION.tar.gz" "${BINARY_URL}"
+    sudo tar xvzf "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-$ENCLAVE_VERSION.tar.gz" -C /usr/bin/ > /dev/null 2>&1
+    rm "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-${ENCLAVE_VERSION}.tar.gz"
     sudo chown root: /usr/bin/enclave
     sudo chmod 755 /usr/bin/enclave
     
