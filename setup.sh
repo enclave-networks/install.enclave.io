@@ -1,11 +1,5 @@
 #!/bin/bash
 # This script installs enclave on Ubuntu, Debian, CentOS, Amazon Linux 2 (x64), Arch Linux and Raspbian 10 (arm).
-#
-# Pass a version number arugment to install a specific version.
-# $ ./install.sh -v 2020.4.19.0
-#
-# Pass a license key for an unattended installation.
-# $ ./install.sh -l XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 
 set -euo pipefail
 # Output green message prefixed with [+]
@@ -19,7 +13,12 @@ error() { echo -e >&2 "\e[31m[!] ${1:-}\e[0m"; exit 1; }
 [[ "${EUID}" -eq  0 ]] && warning "Script running as root, you should run this as an unprivileged user."
 
 usage() {
-    echo "Usage: $0 [-a ARCH] [-l LICENSE_KEY] [-v VERSION]"
+    echo "Usage: $0 "
+    echo -e "\t -a ARCH\t optional\t Specify architecture (x64/armn/arm64)"
+    echo -e "\t -l LICENSE_KEY\t optional\t Specify license key for install"
+    echo -e "\t -v VERSION\t optional\t Specify version to install"
+    echo -e "\t -u \t\t optional \t Use unstable channel for package repositories"
+    echo -e "\t -h \t\t optional \t Display this message"
     [[ "${1:-}" == "error" ]] && exit 1
     exit 0
 }
@@ -27,32 +26,91 @@ usage() {
 quick_start() {
     info "Installation complete."
     echo -e "\n\e[1mLearn how to use Enclave at https://enclave.io/docs/\e[0m"
-    echo "Quick start:"
+    echo -e "Quick start:"
     echo -e "    \e[1menclave add [PEER_NAME] -d [DESCRIPTION]\e[0m to authorise a connection to another system running enclave."
     echo -e "    \e[1menclave status\e[0m for status.\n"
 }
 
-install_dependencies() {
+get_distro_family() {
+    if grep -qi "rhel" /etc/os-release; then
+        echo "rhel"
+    elif grep -qi "raspbian" /etc/os-release; then
+        echo "raspbian"
+    elif grep -qi "debian" /etc/os-release || grep -qi "ubuntu" /etc/os-release; then
+        echo "debian"
+    elif grep -qi "arch" /etc/os-release; then
+        echo "arch"
+    fi
+}
+
+install_apt_package() {
+    # Install the pre-requisites for an apt install
+    info "Updating package index."
+    sudo apt-get update -qq
+    deps=(apt-transport-https wget)
+    sudo apt-get install -yq "${deps[@]}"
+
+    # Add and trust the Enclave package repository
+    info "Adding Enclave GPG package signing key."
+    wget -qO- https://packages.enclave.io/apt/enclave.stable.gpg | sudo apt-key add - >/dev/null 2>&1
+    info "Adding the Enclave package repository."
+    # shellcheck disable=SC2024
+    wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_PKG_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_PKG_LIST}" >/dev/null
+    
+    info "Updating package index"
+    sudo apt-get update -qq
+    
+    # Export the license variable if set so it gets picked up
+    # by the postinst script in the deb
+    if [[ -z "${ENCLAVE_LICENSE:-}" ]]; then
+        export ENCLAVE_LICENSE
+    fi
+    
+    # Check if the user specified an Enclave version to install
+    if [[ -n "${ENCLAVE_VERSION:-}" ]]; then
+        # Install specified Enclave version
+        info "Installing Enclave package (${ENCLAVE_VERSION})."
+        sudo apt-get install -yq "enclave=${ENCLAVE_VERSION}"
+    else
+        # Install latest Enclave
+        info "Installing Enclave package (latest)."
+        sudo apt-get install -yq enclave
+    fi
+
+    # Do not continue with rest of setup as deb handles all of it
+    exit 0
+}
+
+preinstall() {
     info "Checking/installing dependencies."
     deps=(tar wget)
-    # Install common and distro specific deps
-    if grep -qi "rhel" /etc/os-release; then
-        deps+=(libicu)
-        sudo yum install -y "${deps[@]}"
-    elif grep -qi "debian" /etc/os-release; then
-        info "Updating package index."
-        sudo apt-get update -qq
-        # Different versions of Debian/Ubuntu ship different versions of libicu
-        deps+=("$(apt-cache search -n "^libicu[0-9]+$" | cut -d" " -f1)")
-        # RaspberryPi OS/Raspbian needs libsodium-dev
-        if grep -qi "raspbian" /etc/os-release; then 
-            deps+=("libsodium-dev")
-        fi 
-        sudo apt-get install -yq "${deps[@]}"
-    elif grep -qi "arch" /etc/os-release; then
-        deps+=(icu libsodium)
-        sudo pacman -Syq --noconfirm --needed "${deps[@]}"
-    fi
+    
+    case $(get_distro_family) in
+        "debian")
+            info "Debian-based distro detected. Installing via package manager."
+            install_apt_package
+            ;;
+        "raspbian")
+            sudo apt-get update -qq
+            # Different versions of Raspbian ship different versions of libicu
+            deps+=("$(apt-cache search -n "^libicu[0-9]+$" | cut -d" " -f1)" "libsodium-dev")
+            # Install dependencies
+            sudo apt-get install -yq "${deps[@]}"
+            ;;
+        "rhel")
+            # Install deps for rhel/fedora/centos 
+            deps+=(libicu)
+            sudo yum install -y "${deps[@]}"
+            ;;
+        "arch")
+            # Install arch linux deps
+            deps+=(icu libsodium)
+            sudo pacman -Syq --noconfirm --needed "${deps[@]}"
+            ;;
+        *)
+            warning "Unsupported distro detected. Some dependencies may not be present."
+            ;;
+        esac
 }
 
 get_version() {
@@ -60,7 +118,7 @@ get_version() {
     if [[ -n "${latest}" ]]; then
         echo "${latest}"
     else
-        error "Unsupported architecture: $(uname -m). Aborting."
+        error "Unable to fetch latest version."
     fi
 }
 
@@ -81,13 +139,13 @@ install_enclave() {
     
     # Get correct version and build url
     ENCLAVE_VERSION="${ENCLAVE_VERSION:-$(get_version)}"
-    BINARY_URL="https://release.enclave.io/enclave_linux-${ENCLAVE_ARCH}-${ENCLAVE_VERSION}.tar.gz"
+    BINARY_URL="https://release.enclave.io/enclave_linux-${ENCLAVE_ARCH}-stable-${ENCLAVE_VERSION}.tar.gz"
     
     # Download archive to /tmp and extract enclave to /usr/bin
     info "Installing enclave-${ENCLAVE_VERSION}."
-    wget -qO "/tmp/enclave_linux-${ENCLAVE_ARCH}-$ENCLAVE_VERSION.tar.gz" "${BINARY_URL}"
-    sudo tar xvzf "/tmp/enclave_linux-${ENCLAVE_ARCH}-$ENCLAVE_VERSION.tar.gz" -C /usr/bin/ > /dev/null 2>&1
-    rm "/tmp/enclave_linux-${ENCLAVE_ARCH}-${ENCLAVE_VERSION}.tar.gz"
+    wget -qO "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-$ENCLAVE_VERSION.tar.gz" "${BINARY_URL}"
+    sudo tar xvzf "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-$ENCLAVE_VERSION.tar.gz" -C /usr/bin/ > /dev/null 2>&1
+    rm "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-${ENCLAVE_VERSION}.tar.gz"
     sudo chown root: /usr/bin/enclave
     sudo chmod 755 /usr/bin/enclave
     
@@ -139,12 +197,13 @@ start_fabric() {
     fi
 }
 
-while getopts "a:v:l:h" options
+while getopts "a:v:l:hu" options
 do
     case "${options}" in
         a) ENCLAVE_ARCH="${OPTARG}" ;;
         v) ENCLAVE_VERSION="${OPTARG}" ;;
         l) ENCLAVE_LICENSE="${OPTARG}" ;;
+        u) ENCLAVE_PKG_LIST="enclave.unstable.list" ;;
         h) usage ;;
         :) usage error ;;
         *) usage error ;;
@@ -153,8 +212,12 @@ done
 shift $((OPTIND -1))
 
 ENCLAVE_ARCH="${ENCLAVE_ARCH:-$(get_arch)}"
+ENCLAVE_PKG_LIST="${ENCLAVE_PKG_LIST:-enclave.stable.list}"
 
-install_dependencies
+# Check if a package is available and install,
+# if no package, install dependencies
+preinstall
+# Install manually (no package available)
 install_enclave
 license_enclave
 start_fabric
