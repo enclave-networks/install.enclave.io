@@ -52,7 +52,7 @@ install_apt_package() {
 
     # Add and trust the Enclave package repository
     info "Adding Enclave GPG package signing key."
-    wget -qO- https://packages.enclave.io/apt/pubkey.gpg | sudo apt-key add - >/dev/null 2>&1
+    wget -qO- https://packages.enclave.io/apt/enclave.stable.gpg | sudo apt-key add - >/dev/null 2>&1
     info "Adding the Enclave package repository."
     # shellcheck disable=SC2024
     wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_PKG_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_PKG_LIST}" >/dev/null
