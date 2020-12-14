@@ -480,21 +480,21 @@
           "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-stable-2020.12.14.507.tar.gz",
-          "Hash": "r3MxSeAK1idr5/uC8YxU4cNmlf2gJvHKnCW1Ql3iBY8=",
+          "Hash": "4qinLbU/qiBvd1FlsPo3JxCNhv+WKTJIpM2Ueq/fjDA=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2020.12.14.507.tar.gz",
-          "Hash": "RInVglCWEpoYpSy7mI1YCVK/Y5hK/BW/MPtrFebxBu4=",
+          "Hash": "Fr1N9Fgyx0rVAZakSKbR89MiKGsn2zaDJc3fLu3I78I=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-stable-2020.12.14.507.tar.gz",
-          "Hash": "1FLnfV0dGgVQSHYoqakjPtWS40Nqqi/qokiqQXm6Y84=",
+          "Hash": "uwcH9ChOKC5UQQ8+HXeLEyTXwPlaRkGayOw03xGE9mM=",
           "HashAlg": "Sha256"
         }
       ],
