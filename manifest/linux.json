@@ -465,6 +465,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2020,
+      "MinorVersion": 12,
+      "BuildVersion": 14,
+      "RevisionVersion": 507,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1607954391,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2020.12.14.507.tar.gz",
+          "Hash": "p5B4z5Y1BP/B9As5h4I0cZoPTTyJaK8fbe+MwuGkitg=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2020.12.14.507.tar.gz",
+          "Hash": "9l1FYWLXPEGRoIfi2F8hOlBvD2yFnF2cCDR1LGLy7oE=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2020.12.14.507.tar.gz",
+          "Hash": "dg+YsXAfNxXD5hsJRVUzIEPfzkSGVfIXmjUbitmXUV4=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
