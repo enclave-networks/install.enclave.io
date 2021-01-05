@@ -650,21 +650,21 @@
           "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2021.01.05.535.tar.gz",
-          "Hash": "IvalawCws0svIeGNf7yoZc2EDibL0HwGo6OMdZZSctM=",
+          "Hash": "1mnuvAkDyvcez+f6CwAonLzoASbQv5UDBLh/E9h3ZIA=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2021.01.05.535.tar.gz",
-          "Hash": "QlrOpxAMBSlX/CC1PPngPxFqf0ct5f9rJKkG2EI6IBc=",
+          "Hash": "2NN1Pn6ct88yMHi86uMbWLgxD7C2giiFKThn+GHUf9Y=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2021.01.05.535.tar.gz",
-          "Hash": "GPTDd/R/XF3bIkx8BCxBfOQ5f06+0T7k5S5xuXqSiOg=",
+          "Hash": "sGqGLC4nwC0O6c64wjQt3XnzOUOzfCGIEVNKXCGC2+Q=",
           "HashAlg": "Sha256"
         }
       ],
