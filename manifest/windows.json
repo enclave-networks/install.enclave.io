@@ -263,26 +263,6 @@
         }
       ],
       "ReleaseNotes": null
-    },
-    {
-      "MajorVersion": 2021,
-      "MinorVersion": 1,
-      "BuildVersion": 5,
-      "RevisionVersion": 0,
-      "ReleaseType": "RC",
-      "ReleaseDate": 1609929206,
-      "HardStop": -1,
-      "TargetEnvironment": "Production",
-      "Packages": [
-        {
-          "Platform": "Windows",
-          "Architecture": "X64",
-          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2021.1.5.0.zip",
-          "Hash": "M3+T3v8/yyasTfAOMk9Bpvi3eb07T6xfdMI28GUPFWY=",
-          "HashAlg": "Sha256"
-        }
-      ],
-      "ReleaseNotes": null
     }
   ]
 }
