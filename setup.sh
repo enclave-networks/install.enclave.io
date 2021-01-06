@@ -14,11 +14,11 @@ error() { echo -e >&2 "\e[31m[!] ${1:-}\e[0m"; exit 1; }
 
 usage() {
     echo "Usage: $0 "
-    echo -e "\t -a ARCH\t optional\t Specify architecture (x64/armn/arm64)"
-    echo -e "\t -l LICENSE_KEY\t optional\t Specify license key for install"
-    echo -e "\t -v VERSION\t optional\t Specify version to install"
-    echo -e "\t -u \t\t optional \t Use unstable channel for package repositories"
-    echo -e "\t -h \t\t optional \t Display this message"
+    echo -e "\t -a ARCH            optional\t Specify architecture (x64/arm/arm64)"
+    echo -e "\t -e ENROLMENT_KEY   optional\t Specify an enrolment key for install"
+    echo -e "\t -v VERSION         optional\t Specify version to install"
+    echo -e "\t -u                 optional\t Use unstable channel for package repositories"
+    echo -e "\t -h                 optional\t Display this message"
     [[ "${1:-}" == "error" ]] && exit 1
     exit 0
 }
@@ -56,16 +56,16 @@ install_apt_package() {
     info "Adding the Enclave package repository."
     # shellcheck disable=SC2024
     wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_PKG_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_PKG_LIST}" >/dev/null
-    
+
     info "Updating package index"
     sudo apt-get update -qq
-    
-    # Export the license variable if set so it gets picked up
+
+    # Export the enrolment key variable if set so it gets picked up
     # by the postinst script in the deb
-    if [[ -z "${ENCLAVE_LICENSE:-}" ]]; then
-        export ENCLAVE_LICENSE
+    if [[ -z "${ENCLAVE_ENROLMENT_KEY:-}" ]]; then
+        export ENCLAVE_ENROLMENT_KEY
     fi
-    
+
     # Check if the user specified an Enclave version to install
     if [[ -n "${ENCLAVE_VERSION:-}" ]]; then
         # Install specified Enclave version
@@ -84,7 +84,7 @@ install_apt_package() {
 preinstall() {
     info "Checking/installing dependencies."
     deps=(tar wget)
-    
+
     case $(get_distro_family) in
         "debian")
             info "Debian-based distro detected. Installing via package manager."
@@ -98,7 +98,7 @@ preinstall() {
             sudo apt-get install -yq "${deps[@]}"
             ;;
         "rhel")
-            # Install deps for rhel/fedora/centos 
+            # Install deps for rhel/fedora/centos
             deps+=(libicu)
             sudo yum install -y "${deps[@]}"
             ;;
@@ -136,11 +136,11 @@ install_enclave() {
     if sudo systemctl stop enclave >/dev/null 2>&1; then
         info "Enclave service stopped."
     fi
-    
+
     # Get correct version and build url
     ENCLAVE_VERSION="${ENCLAVE_VERSION:-$(get_version)}"
     BINARY_URL="https://release.enclave.io/enclave_linux-${ENCLAVE_ARCH}-stable-${ENCLAVE_VERSION}.tar.gz"
-    
+
     # Download archive to /tmp and extract enclave to /usr/bin
     info "Installing enclave-${ENCLAVE_VERSION}."
     wget -qO "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-$ENCLAVE_VERSION.tar.gz" "${BINARY_URL}"
@@ -148,7 +148,7 @@ install_enclave() {
     rm "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-${ENCLAVE_VERSION}.tar.gz"
     sudo chown root: /usr/bin/enclave
     sudo chmod 755 /usr/bin/enclave
-    
+
     # Create systemd service
     sudo mkdir -p /usr/lib/systemd/system/
     cat <<-EOF | sudo tee /usr/lib/systemd/system/enclave.service >/dev/null
@@ -170,20 +170,20 @@ EOF
     sudo systemctl enable enclave >/dev/null 2>&1
     sudo systemctl start enclave >/dev/null 2>&1
     # Give the background service a couple of seconds to start
-    sleep 2 
+    sleep 2
 }
 
-license_enclave() {
+enrol_system() {
     if sudo test -f /etc/enclave/profiles/Universe.profile; then
         info "Existing identity /etc/enclave/profiles/Universe.profile detected."
     else
-        if [[ -z "${ENCLAVE_LICENSE:-}" ]]; then 
-            warning "No license key supplied."
-            warning "Enclave requires a licence key in order to request a certificate and enroll this system into your account."
+        if [[ -z "${ENCLAVE_ENROLMENT_KEY:-}" ]]; then
+            warning "No enrolment key supplied."
+            warning "Enclave requires an enrolment key in order to request a certificate and enrol this system into your account."
         fi
-        # Check Enclave licenses successfully
-        if ! sudo enclave license "${ENCLAVE_LICENSE:-}"; then
-            error "Failed to license Enclave."
+        # Check Enclave enrols successfully
+        if ! sudo enclave enrol "${ENCLAVE_ENROLMENT_KEY:-}"; then
+            error "Failed to enrol system."
         fi
     fi
 }
@@ -192,7 +192,7 @@ start_fabric() {
     info "Starting Enclave Fabric."
     if sudo enclave start -w; then
         quick_start
-    else 
+    else
         error "Failed to start Enclave fabric."
     fi
 }
@@ -202,7 +202,7 @@ do
     case "${options}" in
         a) ENCLAVE_ARCH="${OPTARG}" ;;
         v) ENCLAVE_VERSION="${OPTARG}" ;;
-        l) ENCLAVE_LICENSE="${OPTARG}" ;;
+        e) ENCLAVE_ENROLMENT_KEY="${OPTARG}" ;;
         u) ENCLAVE_PKG_LIST="enclave.unstable.list" ;;
         h) usage ;;
         :) usage error ;;
@@ -219,5 +219,5 @@ ENCLAVE_PKG_LIST="${ENCLAVE_PKG_LIST:-enclave.stable.list}"
 preinstall
 # Install manually (no package available)
 install_enclave
-license_enclave
+enrol_system
 start_fabric
