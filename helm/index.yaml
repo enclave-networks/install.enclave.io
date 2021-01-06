@@ -3,9 +3,9 @@ entries:
   enclave:
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:51:30.55816054Z"
+    created: "2021-01-06T20:15:14.03261864Z"
     description: Official Enclave Helm Chart
-    digest: ceb82f8a47468068b88254d48a5e67f0927d82817a933bf7a9d7bd1b25f9a1d9
+    digest: 42c2e7339135aaded16be3a5c807320c5693796702ed1f32f170e4e3211eef35
     home: https://enclave.io
     icon: https://enclave.io/img/enclave-logo.png
     keywords:
@@ -19,6 +19,26 @@ entries:
     name: enclave
     type: application
     urls:
-    - https://github.com/enclave-networks/enclave-helm/enclave-0.1.0.tgz
+    - https://install.enclave.io/helm/enclave-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
+    created: "2021-01-06T20:15:14.031997777Z"
+    description: Official Enclave Helm Chart
+    digest: c0a7f80684a792e5d6e375f826f6dc4edcd86fc7cb1a13409031cde083f5d629
+    home: https://enclave.io
+    icon: https://enclave.io/img/enclave-logo.png
+    keywords:
+    - vpn
+    - security
+    - network
+    - zerotrust
+    - overlay
+    - automation
+    - infrastructure
+    name: enclave
+    type: application
+    urls:
+    - https://install.enclave.io/helm/enclave-0.1.0.tgz
     version: 0.1.0
-generated: "2021-01-06T19:51:30.557307836Z"
+generated: "2021-01-06T20:15:14.031155852Z"
