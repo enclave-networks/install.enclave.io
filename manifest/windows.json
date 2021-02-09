@@ -383,6 +383,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 2,
+      "BuildVersion": 9,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1612884316,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2021.2.9.0.zip",
+          "Hash": "rbV6vs6wzDhEKbxv7YAchxF3a382hiNbkuDeBBZH9Fk=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }

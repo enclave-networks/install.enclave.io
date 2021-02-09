@@ -383,6 +383,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 2,
+      "BuildVersion": 9,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1612884316,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2021.2.9.0.exe",
+          "Hash": "WRFzAQ8t5QR0qHtP/M9CDS5g/FiVz1iUV1Z1rcqnhRc=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
