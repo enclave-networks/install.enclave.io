@@ -503,6 +503,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 3,
+      "BuildVersion": 19,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1616169745,
+      "HardStop": -1,
+      "TargetEnvironment": "Staging",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-preprod-2021.3.19.0.zip",
+          "Hash": "3l35P0zi2/yYB/+l9GHbUKzRgdZlC/kNDdtZm7G06mQ=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
