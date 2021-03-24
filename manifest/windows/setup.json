@@ -523,6 +523,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 3,
+      "BuildVersion": 24,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1616603992,
+      "HardStop": -1,
+      "TargetEnvironment": "Staging",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-preprod-2021.3.24.0.exe",
+          "Hash": "c6VSXN3KQNNfBKrulpYaEotQ/ge+IH0/UIWHerhhwrw=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
