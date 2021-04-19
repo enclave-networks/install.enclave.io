@@ -1485,6 +1485,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 4,
+      "BuildVersion": 19,
+      "RevisionVersion": 603,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1618823205,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2021.04.19.603.tar.gz",
+          "Hash": "PSYwbYVu6q4uxhn9ekZnkXUl/6va2ixma+BLRxLmPhA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2021.04.19.603.tar.gz",
+          "Hash": "69GMkX3C2grZgeTG6+tG3U5f7RixkMb2dZSqcdXOsXg=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2021.04.19.603.tar.gz",
+          "Hash": "Ckn+Lx3ytUKc2ZgY9qpaWsbjl+bTGqFA0cSRASLCOYs=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
