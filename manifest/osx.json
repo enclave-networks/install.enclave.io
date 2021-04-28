@@ -1,0 +1,28 @@
+{
+  "ProductName": "Enclave",
+  "DocumentHash": null,
+  "DocumentSignature": null,
+  "TimeToLive": 60,
+  "ReleaseVersions": [
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 4,
+      "BuildVersion": 28,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1600304198,
+      "HardStop": 1600354800,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-2020.9.16.0.zip",
+          "Hash": "UC7CsKMXB2nyr/9X3EwxcDISYPbQZRIn2xGG61QA0sU=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
+    }
+  ]
+}
