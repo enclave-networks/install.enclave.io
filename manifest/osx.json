@@ -9,7 +9,7 @@
       "MinorVersion": 4,
       "BuildVersion": 28,
       "RevisionVersion": 14,
-      "ReleaseType": "RC",
+      "ReleaseType": "GA",
       "ReleaseDate": 1600304198,
       "HardStop": 1600354800,
       "TargetEnvironment": "Production",
