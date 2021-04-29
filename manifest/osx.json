@@ -123,6 +123,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 4,
+      "BuildVersion": 29,
+      "RevisionVersion": 33,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1619705655,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2021.04.29.33.zip",
+          "Hash": "AsMqPs9FNMtwipiAA3NL00Nqy8FVTB0ekyZVC3CC1lQ=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
