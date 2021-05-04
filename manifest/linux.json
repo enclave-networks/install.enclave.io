@@ -1757,6 +1757,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 5,
+      "BuildVersion": 4,
+      "RevisionVersion": 662,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1620140548,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2021.05.04.662.tar.gz",
+          "Hash": "PgwLDdc7NjpSdGNvwrmf1CqW2uhcoj+EVN2fr6pIo6Q=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2021.05.04.662.tar.gz",
+          "Hash": "MsbroVnJ0x/C9S5Ncw8inw57I8vAh3CWpj3A5J1EfYc=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2021.05.04.662.tar.gz",
+          "Hash": "xQRfe0V0beV4OiS8/v6Rd5wwlSbRHI4DHypMr9xkcP0=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
