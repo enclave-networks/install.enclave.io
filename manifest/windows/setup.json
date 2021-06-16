@@ -703,6 +703,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 6,
+      "BuildVersion": 16,
+      "RevisionVersion": 0,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1623883526,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-2021.6.16.0.exe",
+          "Hash": "tJXj9B9ebplJl2Pb43E9g8zw4CJuFvZLgYKW6SQI8v8=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }

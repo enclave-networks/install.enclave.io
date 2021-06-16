@@ -703,6 +703,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 6,
+      "BuildVersion": 16,
+      "RevisionVersion": 0,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1623883526,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-2021.6.16.0.zip",
+          "Hash": "/gnSWlzaaus2/jK021sP5ekLm9mJAh0enx96imWVGZ8=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
