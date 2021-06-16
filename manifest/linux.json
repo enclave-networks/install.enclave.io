@@ -2301,6 +2301,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 6,
+      "BuildVersion": 16,
+      "RevisionVersion": 705,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1623848805,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2021.06.16.705.tar.gz",
+          "Hash": "da+pSnsl9sX7aaS3v0cFlAaQc9zFmfvD5TyGyMkqtwA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2021.06.16.705.tar.gz",
+          "Hash": "iTqVHtp0t7FQTOqU1GnyjSol6WttiMjtRLNUCb6dOLE=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2021.06.16.705.tar.gz",
+          "Hash": "0KN8x1AXvHrxTy17sp6GHwfNfyxuOeVOYAw7OvCW8Hs=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
