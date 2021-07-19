@@ -2369,6 +2369,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 7,
+      "BuildVersion": 19,
+      "RevisionVersion": 710,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1626711975,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2021.07.19.710.tar.gz",
+          "Hash": "iIPbroZ98A2q79k2l2bmGyCc4EhLHq9xFgvWBY+pzR0=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2021.07.19.710.tar.gz",
+          "Hash": "RgL76g5YKZkdwtgBoNhtWhIw4ohWU9QbROE90YD/AEw=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2021.07.19.710.tar.gz",
+          "Hash": "syd0gQoCYW2ui4GKenNxhsG7pjQOVUAu9NIHM/dDMeA=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
