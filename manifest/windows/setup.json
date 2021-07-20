@@ -743,6 +743,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 7,
+      "BuildVersion": 20,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1626790604,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2021.7.20.0.exe",
+          "Hash": "PQfUQZwYSNJxq9ZpkT9u7dyxtAz+bHwzV2R6ufzwdQA=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
