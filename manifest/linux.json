@@ -2641,6 +2641,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 8,
+      "BuildVersion": 2,
+      "RevisionVersion": 749,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1627917207,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2021.08.02.749.tar.gz",
+          "Hash": "DTeSpTJZ5dvtbxeq7MIYC0lRBrv3Fn19Dh2NVEGhWW4=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2021.08.02.749.tar.gz",
+          "Hash": "JGSXIoKn/wcRjcJZZzwTuSZwKnl36F1wYo+3FtCBuIU=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2021.08.02.749.tar.gz",
+          "Hash": "cdR6gKfeyVZuDkqQdU7D6mZPVLDURWqFxtyY6gRMREQ=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
