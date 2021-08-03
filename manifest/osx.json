@@ -643,6 +643,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 8,
+      "BuildVersion": 3,
+      "RevisionVersion": 0,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1628008348,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-stable-2021.08.03.0.zip",
+          "Hash": "17S9/4zGywNe67JoS+1Sw7kDecAC6io/+3UOo6vF8EA=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
