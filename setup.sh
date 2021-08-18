@@ -157,7 +157,7 @@ Description=Enclave
 After=network.target
 
 [Service]
-Environment="DOTNET_BUNDLE_EXTRACT_BASE_DIR=%h/.net/"
+Environment="DOTNET_BUNDLE_EXTRACT_BASE_DIR=%h/.net/enclave"
 ExecStart=/usr/bin/enclave supervisor-service
 
 [Install]
