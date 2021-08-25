@@ -863,6 +863,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 8,
+      "BuildVersion": 24,
+      "RevisionVersion": 0,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1629884215,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-2021.8.24.0.zip",
+          "Hash": "HDjn9mCAuNTE4/7KrBFOAuhzj123j8R1rE9LcPd6Bks=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
