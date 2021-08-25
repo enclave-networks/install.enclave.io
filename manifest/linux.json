@@ -2811,6 +2811,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 8,
+      "BuildVersion": 25,
+      "RevisionVersion": 756,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1629884409,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2021.08.25.756.tar.gz",
+          "Hash": "qMaJaEknVbyytmQi33dKQpAY+sBibCZELqZUrM6LhNQ=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2021.08.25.756.tar.gz",
+          "Hash": "fnp1Gbq78sypo2W1qqXuBP2XFeCjRsERExzSfYDS0F4=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2021.08.25.756.tar.gz",
+          "Hash": "ZSTnmMjuIUrrVh6Gm5wTyTqy9Yu075VqzIwqVZeKQPU=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
