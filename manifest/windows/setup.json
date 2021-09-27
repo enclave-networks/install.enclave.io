@@ -950,7 +950,7 @@
       "BuildVersion": 27,
       "RevisionVersion": 0,
       "ReleaseType": "GA",
-      "ReleaseDate": 1632746680,
+      "ReleaseDate": 1632749552,
       "HardStop": 0,
       "TargetEnvironment": "Production",
       "Packages": [
@@ -958,7 +958,7 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_setup-2021.9.27.0.exe",
-          "Hash": "IVSevbfg+no9CUcibQJp0tr1/ubvPlR/ZZ1Wl1PRXyg=",
+          "Hash": "qb070lFHC0ZOXyCqC34m/Gjw5nC6+38i3NpdC9sj93E=",
           "HashAlg": "Sha256"
         }
       ],
