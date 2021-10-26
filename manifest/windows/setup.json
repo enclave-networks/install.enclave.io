@@ -983,6 +983,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 10,
+      "BuildVersion": 26,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1635249363,
+      "HardStop": 0,
+      "TargetEnvironment": "Staging",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-preprod-2021.10.26.0.exe",
+          "Hash": "PFpCkCz9cr9oK+gUka0UuHUIwTPQo/ax8GI7mE5Bxmo=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
