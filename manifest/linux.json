@@ -3219,6 +3219,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 10,
+      "BuildVersion": 26,
+      "RevisionVersion": 802,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1635246578,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2021.10.26.802.tar.gz",
+          "Hash": "vemo/Fa4UW4OPyTSwzX907bZKhnXyilVf2rEqHWUnsY=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2021.10.26.802.tar.gz",
+          "Hash": "YDGU5T3WojM95O6fdRy2UJmoYMWQXsL5pTT2Dwj0zXE=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2021.10.26.802.tar.gz",
+          "Hash": "2/R5ZSDImv3v+JuD1iQ5QMWmBNKJKXb2RycdAEyGSW4=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
