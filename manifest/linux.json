@@ -3268,21 +3268,21 @@
           "Platform": "Linux",
           "Architecture": "Arm",
           "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2021.10.27.803.tar.gz",
-          "Hash": "JoIu0b/ojYVgnmJwieFx0fRdP3v3q3cBPEhx0cH2uj8=",
+          "Hash": "XDAMclVZdc7/BhIK2d+LllyOct9D6k8OU1ymG3J96yM=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Linux",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2021.10.27.803.tar.gz",
-          "Hash": "io6yEbSSUm3Yh9GXIkioyw7H0Jhd8lO+sw5uumGiRek=",
+          "Hash": "kMs1xozWZN5hRh150vBYnS4GOqe3b5SQiCLpbCfCI1A=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Linux",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2021.10.27.803.tar.gz",
-          "Hash": "j1npCI/Qn/ouyu9cUL9xUX5Z0m5fIfrSsQClMR2TZ4w=",
+          "Hash": "Kif0OdA9lBszYVN9hUQlZlHzDIpXtprURICrsj4kwXI=",
           "HashAlg": "Sha256"
         }
       ],
