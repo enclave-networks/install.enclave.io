@@ -963,6 +963,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 11,
+      "BuildVersion": 2,
+      "RevisionVersion": 0,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1635871723,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-stable-2021.11.02.0.zip",
+          "Hash": "/I8lRWHjOzBqsMt0YOgYbdzCPZ9XpLJbEqLVGbyNfoc=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
