@@ -1030,7 +1030,7 @@
       "BuildVersion": 2,
       "RevisionVersion": 0,
       "ReleaseType": "GA",
-      "ReleaseDate": 1635861985,
+      "ReleaseDate": 1635870016,
       "HardStop": 0,
       "TargetEnvironment": "Production",
       "Packages": [
@@ -1038,7 +1038,7 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-2021.11.2.0.zip",
-          "Hash": "I3Cw9sFxvJ3Kl0guJrifCqNagKDdTy6xj8R+DTLsNd0=",
+          "Hash": "5nUyrZQij41awYTg1cUOyVrttoJO9BDJzsOT1DRfpxc=",
           "HashAlg": "Sha256"
         }
       ],
