@@ -3491,6 +3491,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 11,
+      "BuildVersion": 10,
+      "RevisionVersion": 813,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1636562296,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2021.11.10.813.tar.gz",
+          "Hash": "m0pPVfeTamlq1iDzKf5KFrINlsCX/wkEFNlNgXajYRA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2021.11.10.813.tar.gz",
+          "Hash": "oQDJxkRw5uw1/LcWgae8TlSagvqETLibsg/TDqkp6cs=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2021.11.10.813.tar.gz",
+          "Hash": "it8s/Kr0eQQg2MY2uV8x7wb7Y79OL5XIxWZdYXkJRYc=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
