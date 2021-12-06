@@ -3695,6 +3695,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2021,
+      "MinorVersion": 12,
+      "BuildVersion": 6,
+      "RevisionVersion": 838,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1638807350,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2021.12.06.838.tar.gz",
+          "Hash": "6m5oM3Qcir3gQvX3l/VMQW9PzyoofdQF4k6B0A6bsQw=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2021.12.06.838.tar.gz",
+          "Hash": "j0GCx+H3qY34WSj69TT8dKO08WF1A24kXWjQugcs8R8=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2021.12.06.838.tar.gz",
+          "Hash": "D9QA6Or2R4ShgEpLRMyKxj5kj7CRSaLNzPjEZMBHFzw=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
