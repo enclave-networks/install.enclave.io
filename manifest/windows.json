@@ -1069,7 +1069,7 @@
       "MinorVersion": 12,
       "BuildVersion": 6,
       "RevisionVersion": 0,
-      "ReleaseType": "RC",
+      "ReleaseType": "GA",
       "ReleaseDate": 1638811701,
       "HardStop": 0,
       "TargetEnvironment": "Production",
