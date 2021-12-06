@@ -1070,15 +1070,15 @@
       "BuildVersion": 6,
       "RevisionVersion": 0,
       "ReleaseType": "RC",
-      "ReleaseDate": 1638788959,
+      "ReleaseDate": 1638811701,
       "HardStop": 0,
       "TargetEnvironment": "Production",
       "Packages": [
         {
           "Platform": "Windows",
           "Architecture": "X64",
-          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2021.12.6.0.zip",
-          "Hash": "/WduzD1qI+rLyeKJF5bF7GZWnPapOwwvjfSQ9ZXuT9c=",
+          "Url": "https://release.enclave.io/enclave-windows-x64-2021.12.6.0.zip",
+          "Hash": "zv+H2IlZWUidRJC8Qq0QvNFSbN87bHGczbaGQx4vd/4=",
           "HashAlg": "Sha256"
         }
       ],
