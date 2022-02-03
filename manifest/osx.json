@@ -1163,6 +1163,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 2,
+      "BuildVersion": 3,
+      "RevisionVersion": 240,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1643902311,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2022.02.03.240.zip",
+          "Hash": "DC1hyr0wsQEUw1rBe0lP198XclLcVWnuG/7m88aUoZA=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
