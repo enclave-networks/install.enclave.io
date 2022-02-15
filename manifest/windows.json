@@ -1103,6 +1103,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 2,
+      "BuildVersion": 15,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1644945156,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2022.2.15.0.zip",
+          "Hash": "XqYR0nxo+mC/+bsyukWiZ0LRXLyVCSsNN/X7cByu54g=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
