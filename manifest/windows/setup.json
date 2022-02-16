@@ -1130,15 +1130,15 @@
       "BuildVersion": 16,
       "RevisionVersion": 0,
       "ReleaseType": "RC",
-      "ReleaseDate": 1645021848,
+      "ReleaseDate": 1645033563,
       "HardStop": 0,
       "TargetEnvironment": "Production",
       "Packages": [
         {
           "Platform": "Windows",
           "Architecture": "X64",
-          "Url": "https://release.enclave.io/enclave_setup-rc-2022.2.16.0.exe",
-          "Hash": "31GzEVnx81hEZlUQqoeLeXLUrXCM/ezGswW4haJ2YCs=",
+          "Url": "https://release.enclave.io/enclave_setup-2022.2.16.0.exe",
+          "Hash": "E0KZL7ghDcxse17SxMsriixjMBSW442ca2VZEJHVqRs=",
           "HashAlg": "Sha256"
         }
       ],
