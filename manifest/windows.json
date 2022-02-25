@@ -1169,16 +1169,16 @@
       "MinorVersion": 2,
       "BuildVersion": 25,
       "RevisionVersion": 0,
-      "ReleaseType": "RC",
-      "ReleaseDate": 1645793426,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1645804362,
       "HardStop": 0,
       "TargetEnvironment": "Production",
       "Packages": [
         {
           "Platform": "Windows",
           "Architecture": "X64",
-          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2022.2.25.0.zip",
-          "Hash": "7nu9jt0qb4uoTGXZmQwtcpA/YJ6zdPMS9P64sPlm3mE=",
+          "Url": "https://release.enclave.io/enclave-windows-x64-2022.2.25.0.zip",
+          "Hash": "SIqSvuP+7Npo+86FjeIblofwyN8issPNcBXgEVHt0Zc=",
           "HashAlg": "Sha256"
         }
       ],

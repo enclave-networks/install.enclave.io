@@ -1169,16 +1169,16 @@
       "MinorVersion": 2,
       "BuildVersion": 25,
       "RevisionVersion": 0,
-      "ReleaseType": "RC",
-      "ReleaseDate": 1645793426,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1645804362,
       "HardStop": 0,
       "TargetEnvironment": "Production",
       "Packages": [
         {
           "Platform": "Windows",
           "Architecture": "X64",
-          "Url": "https://release.enclave.io/enclave_setup-rc-2022.2.25.0.exe",
-          "Hash": "gaVA+LPOdgbWY1tJhqSjKeOiHKIoU+OB0fst027gO9A=",
+          "Url": "https://release.enclave.io/enclave_setup-2022.2.25.0.exe",
+          "Hash": "WNwSWOYPo4nSZEhboxrLzo5sqmEdIInvRKVBGDG7p2g=",
           "HashAlg": "Sha256"
         }
       ],
