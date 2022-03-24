@@ -4239,6 +4239,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 3,
+      "BuildVersion": 24,
+      "RevisionVersion": 319,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1648107371,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2022.03.24.319.tar.gz",
+          "Hash": "c1UeCuFq3Jsp9FFPT8QWpdDZ9GK8PyAlVwNUqIMX0NU=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2022.03.24.319.tar.gz",
+          "Hash": "9V6x0DBxOd/BVtbcNHpeosen53crbGx2vGAuU7cpXuY=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2022.03.24.319.tar.gz",
+          "Hash": "u9QNHeas5murmHlcavlFtaTFZdqBrw+Ifd29YADL2e0=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
