@@ -1303,6 +1303,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 4,
+      "BuildVersion": 20,
+      "RevisionVersion": 320,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1650467337,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-stable-2022.04.20.320.zip",
+          "Hash": "Jhm9jFkSwF3Zs8P0AAxWayevhazywULVOB8HqiSGl8o=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
