@@ -32,9 +32,9 @@ quick_start() {
 }
 
 get_distro_family() {
-    if grep -qi  "rhel" /etc/os-release && grep -qi "VERSION_ID=\"7" /etc/os-release then
+    if (grep -qi  "rhel" /etc/os-release && grep -qi "VERSION_ID=\"7" /etc/os-release) || grep -qi "amzn" /etc/os-release; then
         echo "rhel-legacy"
-    elif grep -qi "rhel" /etc/os-release || grep -qi "fedora" /etc/os-release then
+    elif grep -qi "rhel" /etc/os-release || grep -qi "fedora" /etc/os-release; then
         echo "rhel"
     elif grep -qi "suse" /etc/os-release; then 
         echo "suse"
@@ -153,12 +153,14 @@ preinstall() {
         "rhel")
             info "Red hat based distro detected. Installing via package manager."
             install_yum_package
-            return 0
+            false
+            return
             ;;
         "suse")
             info "Suse based distro detected. Installing via package manager."
             install_zypper_package
-            return 0
+            false
+            return
             ;;
         "arch")
             # Install arch linux deps
@@ -170,7 +172,7 @@ preinstall() {
             ;;
         esac
 
-    return 1
+    true
 }
 
 get_version() {
@@ -210,7 +212,7 @@ install_enclave() {
     sudo chmod 755 /usr/bin/enclave
 
 
-        # Create systemd service
+    # Create systemd service
     sudo mkdir -p /usr/lib/systemd/system/
     cat <<-EOF | sudo tee /usr/lib/systemd/system/enclave.service >/dev/null
 [Unit]
@@ -271,7 +273,7 @@ ENCLAVE_PKG_LIST="${ENCLAVE_PKG_LIST:-enclave.stable.list}"
 
 # Check if a package is available and install,
 # if no package, install dependencies
-if $(preinstall) then
+if preinstall; then
 install_enclave
 fi
 # Install manually (no package available)
