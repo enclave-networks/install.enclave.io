@@ -153,10 +153,12 @@ preinstall() {
         "rhel")
             info "Red hat based distro detected. Installing via package manager."
             install_yum_package
+            return 0
             ;;
         "suse")
             info "Suse based distro detected. Installing via package manager."
             install_zypper_package
+            return 0
             ;;
         "arch")
             # Install arch linux deps
@@ -167,6 +169,8 @@ preinstall() {
             warning "Unsupported distro detected. Some dependencies may not be present."
             ;;
         esac
+
+    return 1
 }
 
 get_version() {
@@ -204,6 +208,24 @@ install_enclave() {
     rm "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-${ENCLAVE_VERSION}.tar.gz"
     sudo chown root: /usr/bin/enclave
     sudo chmod 755 /usr/bin/enclave
+
+
+        # Create systemd service
+    sudo mkdir -p /usr/lib/systemd/system/
+    cat <<-EOF | sudo tee /usr/lib/systemd/system/enclave.service >/dev/null
+[Unit]
+Description=Enclave
+After=network.target
+
+[Service]
+Environment="DOTNET_BUNDLE_EXTRACT_BASE_DIR=%h/.net/enclave"
+ExecStart=/usr/bin/enclave supervisor-service
+
+[Install]
+WantedBy=multi-user.target
+EOF
+    # Ensure correct permissions on systemd unit
+    sudo chmod 664 /usr/lib/systemd/system/enclave.service
 }
 
 enrol_system() {
@@ -249,8 +271,9 @@ ENCLAVE_PKG_LIST="${ENCLAVE_PKG_LIST:-enclave.stable.list}"
 
 # Check if a package is available and install,
 # if no package, install dependencies
-preinstall
-# Install manually (no package available)
+if $(preinstall) then
 install_enclave
+fi
+# Install manually (no package available)
 enrol_system
 start_fabric
