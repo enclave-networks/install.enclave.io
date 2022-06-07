@@ -233,6 +233,8 @@ EOF
 enrol_system() {
     if sudo test -f /etc/enclave/profiles/Universe.profile; then
         info "Existing identity /etc/enclave/profiles/Universe.profile detected."
+        info "Starting enclave systemctl service"
+        sudo systemctl start enclave
     else
         if [[ -z "${ENCLAVE_ENROLMENT_KEY:-}" ]]; then
             warning "No enrolment key supplied."
