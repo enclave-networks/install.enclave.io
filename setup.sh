@@ -32,8 +32,12 @@ quick_start() {
 }
 
 get_distro_family() {
-    if grep -qi "rhel" /etc/os-release; then
+    if grep -qi  "rhel" /etc/os-release && grep -qi "VERSION_ID=\"7" /etc/os-release then
+        echo "rhel-legacy"
+    elif grep -qi "rhel" /etc/os-release || grep -qi "fedora" /etc/os-release then
         echo "rhel"
+    elif grep -qi "suse" /etc/os-release; then 
+        echo "suse"
     elif grep -qi "raspbian" /etc/os-release; then
         echo "raspbian"
     elif grep -qi "debian" /etc/os-release || grep -qi "ubuntu" /etc/os-release; then
@@ -46,9 +50,9 @@ get_distro_family() {
 install_apt_package() {
     # Install the pre-requisites for an apt install
     info "Updating package index."
-    sudo apt-get update -qq
+    sudo apt update -qq
     deps=(apt-transport-https wget)
-    sudo apt-get install -yq "${deps[@]}"
+    sudo apt install -yq "${deps[@]}"
 
     # Add and trust the Enclave package repository
     info "Adding Enclave GPG package signing key."
@@ -58,7 +62,7 @@ install_apt_package() {
     wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_PKG_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_PKG_LIST}" >/dev/null
 
     info "Updating package index"
-    sudo apt-get update -qq
+    sudo apt update -qq
 
     # Export the enrolment key variable if set so it gets picked up
     # by the postinst script in the deb
@@ -70,15 +74,58 @@ install_apt_package() {
     if [[ -n "${ENCLAVE_VERSION:-}" ]]; then
         # Install specified Enclave version
         info "Installing Enclave package (${ENCLAVE_VERSION})."
-        sudo apt-get install -yq "enclave=${ENCLAVE_VERSION}"
+        sudo apt install -yq "enclave=${ENCLAVE_VERSION}"
     else
         # Install latest Enclave
         info "Installing Enclave package (latest)."
-        sudo apt-get install -yq enclave
+        sudo apt install -yq enclave
     fi
 
     # Do not continue with rest of setup as deb handles all of it
     exit 0
+}
+
+
+install_yum_package() {
+    # Install the pre-requisites for a yum install
+    info "Installing Pre requisits."
+    sudo dnf -y install dnf-plugins-core
+
+    # Add and trust the Enclave package repository
+    info "Adding enclave yum Repo."
+    sudo dnf config-manager --add-repo https://packages.enclave.io/rpm/enclave.repo   
+
+    # Check if the user specified an Enclave version to install
+    if [[ -n "${ENCLAVE_VERSION:-}" ]]; then
+        # Install specified Enclave version
+        info "Installing Enclave package (${ENCLAVE_VERSION})."
+        sudo dnf install enclave-${ENCLAVE_VERSION} -y --refresh
+    else
+        # Install latest Enclave
+        info "Installing Enclave package (latest)."
+        sudo dnf install enclave -y --refresh
+    fi
+}
+
+
+install_zypper_package() {
+    # Add and trust the Enclave package repository
+    info "Adding enclave yum Repo."
+    sudo zypper -n addrepo https://packages.enclave.io/rpm/enclave.repo
+    
+    info "Importing GPG keys."
+    sudo zypper --gpg-auto-import-keys refresh
+
+    # Check if the user specified an Enclave version to install
+    if [[ -n "${ENCLAVE_VERSION:-}" ]]; then
+        # Install specified Enclave version
+        info "Installing Enclave package (${ENCLAVE_VERSION})."
+        sudo zypper -n install enclave-${ENCLAVE_VERSION}
+    else
+        # Install latest Enclave
+        info "Installing Enclave package (latest)."
+        sudo zypper -n install enclave
+    fi
 }
 
 preinstall() {
@@ -91,16 +138,25 @@ preinstall() {
             install_apt_package
             ;;
         "raspbian")
-            sudo apt-get update -qq
+            sudo apt update -qq
             # Different versions of Raspbian ship different versions of libicu
             deps+=("$(apt-cache search -n "^libicu[0-9]+$" | cut -d" " -f1)" "libsodium-dev")
             # Install dependencies
-            sudo apt-get install -yq "${deps[@]}"
+            sudo apt install -yq "${deps[@]}"
             ;;
-        "rhel")
+        "rhel-legacy")
+            # This is primarly for RHEL 7 and older as they don't support our new RPM version
             # Install deps for rhel/fedora/centos
             deps+=(libicu)
             sudo yum install -y "${deps[@]}"
+            ;;
+        "rhel")
+            info "Red hat based distro detected. Installing via package manager."
+            install_yum_package
+            ;;
+        "suse")
+            info "Suse based distro detected. Installing via package manager."
+            install_zypper_package
             ;;
         "arch")
             # Install arch linux deps
@@ -148,30 +204,6 @@ install_enclave() {
     rm "/tmp/enclave_linux-${ENCLAVE_ARCH}-stable-${ENCLAVE_VERSION}.tar.gz"
     sudo chown root: /usr/bin/enclave
     sudo chmod 755 /usr/bin/enclave
-
-    # Create systemd service
-    sudo mkdir -p /usr/lib/systemd/system/
-    cat <<-EOF | sudo tee /usr/lib/systemd/system/enclave.service >/dev/null
-[Unit]
-Description=Enclave
-After=network.target
-
-[Service]
-Environment="DOTNET_BUNDLE_EXTRACT_BASE_DIR=%h/.net/enclave"
-ExecStart=/usr/bin/enclave supervisor-service
-
-[Install]
-WantedBy=multi-user.target
-EOF
-    # Ensure correct permissions on systemd unit
-    sudo chmod 664 /usr/lib/systemd/system/enclave.service
-    # Start and enable the Enclave service
-    info "Starting Enclave service."
-    sudo systemctl daemon-reload >/dev/null 2>&1
-    sudo systemctl enable enclave >/dev/null 2>&1
-    sudo systemctl start enclave >/dev/null 2>&1
-    # Give the background service a couple of seconds to start
-    sleep 2
 }
 
 enrol_system() {
