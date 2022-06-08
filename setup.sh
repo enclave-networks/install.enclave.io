@@ -88,7 +88,7 @@ install_apt_package() {
 
 install_yum_package() {
     # Install the pre-requisites for a yum install
-    info "Installing Pre requisits."
+    info "Installing Prerequisites."
     sudo dnf -y install dnf-plugins-core
 
     # Add and trust the Enclave package repository
