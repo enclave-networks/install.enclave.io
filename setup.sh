@@ -32,10 +32,28 @@ quick_start() {
 }
 
 get_distro_family() {
-    if (grep -qi  "rhel" /etc/os-release && grep -qi "VERSION_ID=\"7" /etc/os-release) || grep -qi "amzn" /etc/os-release; then
+    if grep -qi  "fedora" /etc/os-release;  then
+        # Use the built in RPM macro to determine current fedora version if the version isn't good enough we fall back to a manual install
+        # These macros are the same ones used when making an RPM package so can be relied upon
+        FEDVER=$(rpm -E %{fedora})
+        # Fedora 34 is chosen here as we know it's got a new enough version of RPM to work with enclave
+        if [[ $FEDVER -ge 34 ]] 
+        then  
+            echo "rhel"
+        fi
+    elif  grep -qi "amzn" /etc/os-release; then
         echo "rhel-legacy"
-    elif grep -qi "rhel" /etc/os-release || grep -qi "fedora" /etc/os-release; then
-        echo "rhel"
+    elif grep -qi "rhel" /etc/os-release; then
+        # Use the built in RPM macro to determine current rhel version if the version isn't good enough we fall back to a manual install
+        # These macros are the same ones used when making an RPM package so can be relied upon
+        RHELVER=$(rpm -E %{rhel})
+        if [[ $RHELVER -ge 8 ]]
+        then  
+            echo "rhel"
+        elif [[ $RHELVER -le 7 ]] 
+        then
+            echo "rhel-legacy"
+        fi
     elif grep -qi "suse" /etc/os-release; then 
         echo "suse"
     elif grep -qi "raspbian" /etc/os-release; then
