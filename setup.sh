@@ -98,9 +98,6 @@ install_apt_package() {
         info "Installing Enclave package (latest)."
         sudo apt install -yq enclave
     fi
-
-    # Do not continue with rest of setup as deb handles all of it
-    exit 0
 }
 
 
@@ -154,6 +151,8 @@ preinstall() {
         "debian")
             info "Debian-based distro detected. Installing via package manager."
             install_apt_package
+            false
+            return
             ;;
         "raspbian")
             sudo apt update -qq
@@ -293,9 +292,10 @@ ENCLAVE_PKG_LIST="${ENCLAVE_PKG_LIST:-enclave.stable.list}"
 
 # Check if a package is available and install,
 # if no package, install dependencies
+# check if preinstall returns true this means that a manual install is required
 if preinstall; then
-install_enclave
+    # Install manually (no repo available)
+    install_enclave
 fi
-# Install manually (no package available)
 enrol_system
 start_fabric
