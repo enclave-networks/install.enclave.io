@@ -245,6 +245,24 @@ WantedBy=multi-user.target
 EOF
     # Ensure correct permissions on systemd unit
     sudo chmod 664 /usr/lib/systemd/system/enclave.service
+
+
+        # Create systemd service for enclave auth daemon
+    sudo mkdir -p /usr/lib/systemd/user/
+    cat <<-EOF | sudo tee /usr/lib/systemd/user/enclave-auth.service >/dev/null
+[Unit]
+Description=EnclaveAuth
+After=enclave.service
+
+[Service]
+Environment="DOTNET_BUNDLE_EXTRACT_BASE_DIR=%h/.net/enclave"
+ExecStart=/usr/bin/enclave auth -d
+
+[Install]
+WantedBy=multi-user.target
+EOF
+    # Ensure correct permissions on systemd unit
+    sudo chmod 664 /usr/lib/systemd/user/enclave-auth.service
 }
 
 enrol_system() {
