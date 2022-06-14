@@ -1,7 +1,5 @@
 {
   "ProductName": "Enclave Setup",
-  "DocumentHash": null,
-  "DocumentSignature": null,
   "TimeToLive": 60,
   "ReleaseVersions": [
     {
@@ -21,8 +19,7 @@
           "Hash": "z3zCyezIy/ISn/vSAlc79dkG3FNhmQPhLu4xn51Uq5s=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -41,8 +38,7 @@
           "Hash": "OtouEKLsPU3iMug+yrOkYYA+tQxv/xlVzl6zgDCNkug=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -61,8 +57,7 @@
           "Hash": "1hUmhQ4Sx42yHCzPKVkgzCFQ0gky0KwNfiz+MRpMf6w=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -81,8 +76,7 @@
           "Hash": "Ev1Cp5I1YNCXEdwACR+en88xpCXxWlstAo+Z4u8JGU8=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -101,8 +95,7 @@
           "Hash": "2iaEbE8YHti0rIanQfYbYzcJ6T3yYem7JpXTRTMEAJc=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -121,8 +114,7 @@
           "Hash": "erF4hSuFML03RsA72pxVCKsa5XL7Mp+u4L37/sHY+Ko=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -141,8 +133,7 @@
           "Hash": "AVzqCKgZne2/3iKhZwZhj/vsWqHd0TMfU24YijVD8G8=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -161,8 +152,7 @@
           "Hash": "wtSzRUqUNV/OP005bi9d2juoMDTm+EebicOYynuGjmg=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -181,8 +171,7 @@
           "Hash": "7LUDumV3R3BGvvG5S2SxWzfuh7gxJMamKPneSmeDjn8=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -201,8 +190,7 @@
           "Hash": "S0zYns7eAwQkqJjKJ9nEBQmdWKjR+AGvfHKjRpWaGuA=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -221,8 +209,7 @@
           "Hash": "WigGyx0l6XkBxwlClTGKSzC2twxpqjr16Lc/bk/24KM=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -241,8 +228,7 @@
           "Hash": "VXYT5d9eaD61/GFG54+TVkyTWWq4T82YK+SMH+BEKmY=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2020,
@@ -261,8 +247,7 @@
           "Hash": "lDv1ESGcP7i+hWhcyLK9lYLQL2h7z7inkLpaLtv7s+Q=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -281,8 +266,7 @@
           "Hash": "qtFuWkDTj6Y8ywVVNYixnRIxtBAzRVs2+nZISFkoaU4=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -301,8 +285,7 @@
           "Hash": "iGM0+uo3DFa3bT8YutXluUTZCnHJef5rFWt7+Ih2iJQ=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -321,8 +304,7 @@
           "Hash": "5ddELWZ877R3RaQCdRjyU2uJEMSj9RQXBiRsQQxjJDQ=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -341,8 +323,7 @@
           "Hash": "FSALVjrn4Fbt98JzGsPuLGEh8ez5sseJ4jrDqX48R2g=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -361,8 +342,7 @@
           "Hash": "7/Xc4IpflH5aCJgxEhQR9B0KY0ynOXu1alDnyfKMpS0=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -381,8 +361,7 @@
           "Hash": "xDRS4Y5/oRq7j2xO6A8HZxnbKydwLfAvGDWAgexZzdk=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -401,8 +380,7 @@
           "Hash": "WRFzAQ8t5QR0qHtP/M9CDS5g/FiVz1iUV1Z1rcqnhRc=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -421,8 +399,7 @@
           "Hash": "+5jsckeBZMhgRML1fQDN4A5EwCy++pnqiVIsNusm5ck=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -441,8 +418,7 @@
           "Hash": "R0NH/ni2s+FuujUnx85ofQsbfihO9QWFCDFB+G+4S9U=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -461,8 +437,7 @@
           "Hash": "g0fqoZqaM0zxNXPDFmJloskxm8Nl9yplmO6IARrjZYY=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -481,8 +456,7 @@
           "Hash": "U+n4MfIpLy/USTJaLWITsXP7RK/VQQXvpwHYwlzEiE4=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -501,8 +475,7 @@
           "Hash": "7oCPOn+ni1kAUFuFIqzoPbV4mxT6blVvZW878VahrPo=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -521,8 +494,7 @@
           "Hash": "SQMTrni+DAbLlhCoQ6On7uRIt0OrzqW1s93Z4CcIoQA=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -541,8 +513,7 @@
           "Hash": "c6VSXN3KQNNfBKrulpYaEotQ/ge+IH0/UIWHerhhwrw=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -561,8 +532,7 @@
           "Hash": "9Ju9h9DvVaG7FHZ602/pSXsVqH+Ep59kF9OYZl3Sa/Q=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -581,8 +551,7 @@
           "Hash": "RsSnXBIQCjZ57MGKe0n5A92quDIh8/16Nxzo2npKIuM=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -601,8 +570,7 @@
           "Hash": "Olov4gyljtOR1I2ge+ojKhuojE6C0xpPkbqMrMbuWiA=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -621,8 +589,7 @@
           "Hash": "cjahl/da9Nl5IvCDfFS8lh3z/RFnK7+yls7lxSOOVNM=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -641,8 +608,7 @@
           "Hash": "BPsq2cMhorhHDJoJFRidYa9M9IU3TJGOP+xyhoYYrss=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -661,8 +627,7 @@
           "Hash": "ayZirUj9Y1U6kZSR6BxOQPCs382653s76pzZM15i88s=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -681,8 +646,7 @@
           "Hash": "t6ln8cbjIt4UYqLFYsWh1zeM8fcKXKDFx+sEG//pZns=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -701,8 +665,7 @@
           "Hash": "L1I4Y+nobwAy+OBQysYCd7aOb/mUWOOTCFcGj9sMIIw=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -721,8 +684,7 @@
           "Hash": "tJXj9B9ebplJl2Pb43E9g8zw4CJuFvZLgYKW6SQI8v8=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -741,8 +703,7 @@
           "Hash": "uE7lSpqPtgBGsm4Kl295EiR0m6Tgc5NF0i8mv1FKoWw=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -761,8 +722,7 @@
           "Hash": "PQfUQZwYSNJxq9ZpkT9u7dyxtAz+bHwzV2R6ufzwdQA=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -781,8 +741,7 @@
           "Hash": "wiXNTPu6uAZUvE1sctjfdjuzrPte5KuwzkIlNhrEtMc=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -801,8 +760,7 @@
           "Hash": "M2BoFC0aJxnChyg40ExI5VSUx1x71ZKY2FCcti/XPOw=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -821,8 +779,7 @@
           "Hash": "HkQUQ6Eog0E0kPYlX4d5e935iGZFMdSGVf/3GTPSjDo=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -841,8 +798,7 @@
           "Hash": "wbhU8ud80UD+dFWVztufQZIxpgmABFYshSFR2yD+HDs=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -861,8 +817,7 @@
           "Hash": "UHXv6sHe60f7cevmlDPgk0LyxQXiczjo/dsohevhkkY=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -881,8 +836,7 @@
           "Hash": "JwuhLk08E5baF/l3lNyBlc4IJyVLhwxEWsvsS8LRRco=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -901,8 +855,7 @@
           "Hash": "4Txz2EsI+VR/o9roM5aLWqZyUYlmD0/f6lgngtGweN8=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -921,8 +874,7 @@
           "Hash": "gkgR0n4xmY7rCWoMYRDXRPd/TZP9RKb6AbXHbPuxvRI=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -941,8 +893,7 @@
           "Hash": "ZUO4lTYwQuh746lYEkoc0AmioKbN9LSdFXS2VQ+5e3c=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -961,8 +912,7 @@
           "Hash": "qb070lFHC0ZOXyCqC34m/Gjw5nC6+38i3NpdC9sj93E=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -981,8 +931,7 @@
           "Hash": "7NMxFjF60M0/Rnp3VaVH5n/T3AA14p4UWLBSNhoQSGU=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -1001,8 +950,7 @@
           "Hash": "PFpCkCz9cr9oK+gUka0UuHUIwTPQo/ax8GI7mE5Bxmo=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -1021,8 +969,7 @@
           "Hash": "NzaN9RiaRv/Oo6XRw1Q0szS9MA2Ejz8U+XA5hL9QE40=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -1041,8 +988,7 @@
           "Hash": "/ke7yV3bIfNqIAaRICj5qxaW7tEaej9i4w+DTmzwm3E=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -1061,8 +1007,7 @@
           "Hash": "EuKb+xZqzlJfrZocy7e9G2A79VEDTpPsHKpsipQvQBE=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2021,
@@ -1081,8 +1026,7 @@
           "Hash": "zxL94zShPV3/1rN/y9QAUEcUPiyd/7brtBXy7Lc1vRM=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2022,
@@ -1101,8 +1045,7 @@
           "Hash": "jp5PoBZ0+XxtWO2CDBVGEhaf/5BBu0xyIKQkpNXGyEI=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2022,
@@ -1121,8 +1064,7 @@
           "Hash": "o0szlqYcJdmAd2SDEONCPe4A9vrs7PP8lvk4N7oMGz4=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2022,
@@ -1141,8 +1083,7 @@
           "Hash": "E0KZL7ghDcxse17SxMsriixjMBSW442ca2VZEJHVqRs=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2022,
@@ -1161,8 +1102,7 @@
           "Hash": "um8Gu56obBeIjUyrAsV24MXAHUK1KbsrlRgkSjXPssE=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2022,
@@ -1181,8 +1121,7 @@
           "Hash": "WNwSWOYPo4nSZEhboxrLzo5sqmEdIInvRKVBGDG7p2g=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2022,
@@ -1201,8 +1140,7 @@
           "Hash": "7vEi4mlXYZeucDIrpw94TNnNhnctDFwWokU64dkmxmk=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2022,
@@ -1221,8 +1159,7 @@
           "Hash": "bylSr3lFELmHQkYirbZiXokSyGxgkb32+Qxm5YpFm1o=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
     },
     {
       "MajorVersion": 2022,
@@ -1241,8 +1178,26 @@
           "Hash": "/VkG/hWBHJH7PxLooZCoUCqPz+dcBRmQ06IAKh+1uH8=",
           "HashAlg": "Sha256"
         }
-      ],
-      "ReleaseNotes": null
+      ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 6,
+      "BuildVersion": 14,
+      "RevisionVersion": 0,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1655208149,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2022.6.14.38.exe",
+          "Hash": "URoJb0BX0H+9CGwRLKZxXNgfcsBr0e/7IkpHJM4sVGo=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
