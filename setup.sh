@@ -260,7 +260,7 @@ Environment="DOTNET_BUNDLE_EXTRACT_BASE_DIR=%h/.net/enclave"
 ExecStart=/usr/bin/enclave auth -d
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 EOF
     # Ensure correct permissions on systemd unit
     sudo chmod 664 /usr/lib/systemd/user/enclave-auth.service
