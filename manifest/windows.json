@@ -1274,6 +1274,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 6,
+      "BuildVersion": 18,
+      "RevisionVersion": 74,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1655568853,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-2022.6.18.74.zip",
+          "Hash": "DMzy4QJJzjLpz4csZjb9vjqwwCPQTAGL1e0AoCwjaQo=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
