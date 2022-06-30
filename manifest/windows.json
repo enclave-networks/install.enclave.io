@@ -1293,6 +1293,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 6,
+      "BuildVersion": 30,
+      "RevisionVersion": 92,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1656603267,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2022.6.30.92.zip",
+          "Hash": "u6TqZKs7sEre2IjzrOob8vH/QQBQLs6g3VkhepO0ws8=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
