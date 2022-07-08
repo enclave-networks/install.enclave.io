@@ -246,9 +246,8 @@ WantedBy=multi-user.target
 EOF
     # Ensure correct permissions on systemd unit
     sudo chmod 664 /usr/lib/systemd/system/enclave.service
-
-
-        # Create systemd service for enclave auth daemon
+    
+    # Create systemd service for enclave auth daemon
     sudo mkdir -p /usr/lib/systemd/user/
     cat <<-EOF | sudo tee /usr/lib/systemd/user/enclave-auth.service >/dev/null
 [Unit]
