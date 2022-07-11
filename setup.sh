@@ -69,15 +69,16 @@ install_apt_package() {
     # Install the pre-requisites for an apt install
     info "Updating package index."
     sudo apt update -qq
-    deps=(apt-transport-https wget)
+    deps=(apt-transport-https curl)
     sudo apt install -yq "${deps[@]}"
 
     # Add and trust the Enclave package repository
     info "Adding Enclave GPG package signing key."
-    wget -qO- https://packages.enclave.io/apt/enclave.stable.gpg | sudo apt-key add - >/dev/null 2>&1
+    curl -fsSL https://packages.enclave.io/apt/enclave.stable.gpg | sudo gpg --dearmor -o /usr/share/keyrings/enclave.gpg
+
     info "Adding the Enclave package repository."
     # shellcheck disable=SC2024
-    wget -qO- "https://packages.enclave.io/apt/${ENCLAVE_PKG_LIST}" | sudo tee "/etc/apt/sources.list.d/${ENCLAVE_PKG_LIST}" >/dev/null
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/enclave.gpg] https://packages.enclave.io/apt stable main" | sudo tee /etc/apt/sources.list.d/enclave.stable.list
 
     info "Updating package index"
     sudo apt update -qq
@@ -245,6 +246,23 @@ WantedBy=multi-user.target
 EOF
     # Ensure correct permissions on systemd unit
     sudo chmod 664 /usr/lib/systemd/system/enclave.service
+    
+    # Create systemd service for enclave auth daemon
+    sudo mkdir -p /usr/lib/systemd/user/
+    cat <<-EOF | sudo tee /usr/lib/systemd/user/enclave-auth.service >/dev/null
+[Unit]
+Description=EnclaveAuth
+After=enclave.service
+
+[Service]
+Environment="DOTNET_BUNDLE_EXTRACT_BASE_DIR=%h/.net/enclave"
+ExecStart=/usr/bin/enclave auth -d
+
+[Install]
+WantedBy=default.target
+EOF
+    # Ensure correct permissions on systemd unit
+    sudo chmod 664 /usr/lib/systemd/user/enclave-auth.service
 }
 
 enrol_system() {
