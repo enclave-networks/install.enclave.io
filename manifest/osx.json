@@ -1503,6 +1503,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 7,
+      "BuildVersion": 11,
+      "RevisionVersion": 370,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1657551340,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2022.07.11.370.zip",
+          "Hash": "jgCakvTYpUyoZbJXD3x5VhWtBhBQpN7dLJmnzbqK4Gs=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
