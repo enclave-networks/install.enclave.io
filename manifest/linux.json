@@ -4953,6 +4953,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 8,
+      "BuildVersion": 17,
+      "RevisionVersion": 518,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1660745633,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2022.08.17.518.tar.gz",
+          "Hash": "xHFBtM/Dd+x+QZWsayW0X89hP28nU9avAJtXFuE4Fik=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2022.08.17.518.tar.gz",
+          "Hash": "m3V/6bybqIPZAscgCo4VL5ayXlhmBPlUb6Qen3zUFhg=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2022.08.17.518.tar.gz",
+          "Hash": "4dCPt3K+D14+SXUdGeaM4eUe0Z9R0tJ1u3FAmZ9YA1Q=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
