@@ -58,6 +58,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 8,
+      "BuildVersion": 23,
+      "RevisionVersion": 165,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1661270279,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-2022.8.23.165.msi",
+          "Hash": "W/ToY3ko58ptt9DOm5Ffk7i9auYy+zmF/jvERs8uny0=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
