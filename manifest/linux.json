@@ -5089,6 +5089,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 8,
+      "BuildVersion": 23,
+      "RevisionVersion": 545,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1661270532,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2022.08.23.545.tar.gz",
+          "Hash": "UmRaqDVqzmQ1TMaLnD7OpuwlDtevSmyoOijQA7h+plg=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2022.08.23.545.tar.gz",
+          "Hash": "MO7O+1BKzcpkFknVHy3eOpi4NTo9lotQO/1yXQZcO6Q=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2022.08.23.545.tar.gz",
+          "Hash": "BOpde9q2BWFHp7ZDeComzK5xKU9XZfNk1Hp465tRzPI=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
