@@ -1407,6 +1407,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 9,
+      "BuildVersion": 6,
+      "RevisionVersion": 208,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1662483410,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2022.9.6.208.exe",
+          "Hash": "2ReCax/1wsogttBXiYSqNPzH2HOXLAMzlsE3rDQwLow=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }

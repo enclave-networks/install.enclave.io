@@ -96,6 +96,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 9,
+      "BuildVersion": 6,
+      "RevisionVersion": 208,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1662483410,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-rc-2022.9.6.208.exe",
+          "Hash": "lmPJ/RsSEmZ8gYYqgZpeI8dACyrv6qlSRCIRlPq/G1E=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
