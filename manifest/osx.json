@@ -1743,6 +1743,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 9,
+      "BuildVersion": 9,
+      "RevisionVersion": 403,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1662739317,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2022.09.09.403.zip",
+          "Hash": "h4FMS8eKHfEFQLl4qgBNGID5JjRQg4K6+R2umzzqT1k=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
