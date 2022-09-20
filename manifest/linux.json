@@ -5225,6 +5225,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 9,
+      "BuildVersion": 20,
+      "RevisionVersion": 602,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1663667966,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2022.09.20.602.tar.gz",
+          "Hash": "Gbik1pDEzQIjKqdJPMMDuTHfd339V+xkJI3EDLk2o+I=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2022.09.20.602.tar.gz",
+          "Hash": "fa8oQ9ox3TX2Pc83AquNnoHRsAvNBrNutDFbcXmcI04=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2022.09.20.602.tar.gz",
+          "Hash": "SVil8r6Y2huARzgKAyi4AE3s1ef/wFMvIbo6aESrF+c=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
