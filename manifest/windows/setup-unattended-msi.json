@@ -115,6 +115,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 9,
+      "BuildVersion": 22,
+      "RevisionVersion": 226,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1663844300,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-rc-2022.9.22.226.msi",
+          "Hash": "1OItgYY2t/M/qbgmS/u9yn8Nn8UDIwc2evgREdFIcqg=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
