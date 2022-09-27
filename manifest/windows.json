@@ -1445,6 +1445,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 9,
+      "BuildVersion": 27,
+      "RevisionVersion": 229,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1664284916,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-2022.9.27.229.zip",
+          "Hash": "TibgvKacz4BkxI2Qz7rk5PGUdD6rnAR377S3HwZytEE=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
