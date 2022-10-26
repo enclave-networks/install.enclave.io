@@ -172,6 +172,32 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 10,
+      "BuildVersion": 25,
+      "RevisionVersion": 259,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1666773370,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2022.10.25.259.exe",
+          "Hash": "7ehIefod6f19rk+KUfbXaCEARJfej2hag60ur6Lyuzg=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2022.10.25.259.exe",
+          "Hash": "bS662LBbgZgTxC0SSTPeJGOCQrGfF9/NpPAcH8GqswU=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
