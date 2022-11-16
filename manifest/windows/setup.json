@@ -1540,6 +1540,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 11,
+      "BuildVersion": 16,
+      "RevisionVersion": 334,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1668591627,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2022.11.16.334.exe",
+          "Hash": "EwUBaDEmzTZILjwQ1ud4ozSYr90pq6b8v67jyDTG7BU=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
