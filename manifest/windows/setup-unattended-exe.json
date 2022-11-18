@@ -302,6 +302,32 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 11,
+      "BuildVersion": 18,
+      "RevisionVersion": 354,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1668779983,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-2022.11.18.354.exe",
+          "Hash": "WoJmDgu5ts3AHsxczsiX6y2j7wAbTQJE4ZadfHSU+F8=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-2022.11.18.354.exe",
+          "Hash": "85uCXmerY25D6J+8wb2BdoNaILrWKutlYaejkLmpUDs=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }

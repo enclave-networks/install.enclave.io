@@ -1578,6 +1578,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 11,
+      "BuildVersion": 18,
+      "RevisionVersion": 354,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1668779981,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-2022.11.18.354.exe",
+          "Hash": "rocf5T2XUgYjuvRiTc7LvlquTmSj2R8h7PbSAYhV1fo=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
