@@ -410,7 +410,7 @@
       "BuildVersion": 25,
       "RevisionVersion": 377,
       "ReleaseType": "RC",
-      "ReleaseDate": 1669393199,
+      "ReleaseDate": 1669396519,
       "HardStop": 0,
       "TargetEnvironment": "Production",
       "Packages": [
@@ -418,21 +418,21 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2022.11.25.377.msi",
-          "Hash": "VHfzG1s0db7poXwsjtQd76bWX0pE2zBhdljC6B3MrA4=",
+          "Hash": "sKGCLRji+rxz5jvbut8Ltb+IA2Y0w3uMzKwXU63bJDo=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Windows",
           "Architecture": "X86",
           "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2022.11.25.377.msi",
-          "Hash": "/Bu6KCJUzndKVHgXOmiem5dV8Y7SUpMuJjthLsMLAk0=",
+          "Hash": "uy5FAjDlJNATUtLPmXXzZzpfeC4fEcLlxdd+fLEufnQ=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Windows",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2022.11.25.377.msi",
-          "Hash": "/Bu6KCJUzndKVHgXOmiem5dV8Y7SUpMuJjthLsMLAk0=",
+          "Hash": "uy5FAjDlJNATUtLPmXXzZzpfeC4fEcLlxdd+fLEufnQ=",
           "HashAlg": "Sha256"
         }
       ]
