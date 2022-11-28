@@ -1635,6 +1635,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 11,
+      "BuildVersion": 28,
+      "RevisionVersion": 381,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1669623483,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-2022.11.28.381.exe",
+          "Hash": "LocSYFXPNS48IGSIRyIypQBWNjFlJTzFDWb+Z536FkI=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
