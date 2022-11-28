@@ -5633,6 +5633,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2022,
+      "MinorVersion": 11,
+      "BuildVersion": 28,
+      "RevisionVersion": 761,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1669623811,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2022.11.28.761.tar.gz",
+          "Hash": "0J+KziiZH3jh14a0DJt1hdI4dsCurNHuJWEIwwTFmJk=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2022.11.28.761.tar.gz",
+          "Hash": "8U6eFgO8swWIHEQxz+zNAuw2nsxNZGp9Y1X36KazAic=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2022.11.28.761.tar.gz",
+          "Hash": "0bQ3GGe6EbZu20KLCh9c1UJiu+iYwBOGUAxfXVLjuyE=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
