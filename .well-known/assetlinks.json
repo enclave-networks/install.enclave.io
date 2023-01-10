@@ -1,0 +1,16 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.enclave.agent",
+        "sha256_cert_fingerprints":
+          [
+            "8F:BD:98:8D:73:C5:9A:27:C2:44:4A:1E:06:31:AF:01:F1:2C:5E:18:78:1F:43:BE:D4:02:E9:88:21:84:27:D6",
+            "32:17:5A:67:E3:F4:26:45:4B:08:9B:98:BF:9C:E0:76:F8:2B:3F:99:5F:F5:A4:44:60:C9:AE:9E:C5:14:01:95",
+            "49:AD:3D:5F:53:AE:31:1C:9A:4F:C4:1D:9D:B2:35:4A:D1:06:44:C1:AE:A3:72:AA:3B:DF:FC:0E:44:91:C7:36"
+          ]
+      }
+    }
+  ]
+  
