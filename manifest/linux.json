@@ -6041,6 +6041,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 1,
+      "BuildVersion": 18,
+      "RevisionVersion": 904,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1674066816,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2023.01.18.904.tar.gz",
+          "Hash": "4QnfEFruwq+yvdceCgeaX9yOsuUiLY/t43A5Srs1oZA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2023.01.18.904.tar.gz",
+          "Hash": "ZdciMGpy+6AJ3JXKnpPx+CifZQXFlltM7VuaAYmoaFg=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2023.01.18.904.tar.gz",
+          "Hash": "SPtwU2iLG8azdFp82QYabnP5z9VInSDdigaV/uEOr/8=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
