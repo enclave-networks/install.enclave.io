@@ -1730,6 +1730,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 1,
+      "BuildVersion": 30,
+      "RevisionVersion": 532,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1675098341,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2023.1.30.532.exe",
+          "Hash": "vOj78IkzGcDr9WIbKSzOwx6xxS3rE3YnP8yzq4n4z/M=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
