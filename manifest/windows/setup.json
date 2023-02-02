@@ -1768,6 +1768,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 2,
+      "BuildVersion": 2,
+      "RevisionVersion": 543,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1675337854,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-2023.2.2.543.exe",
+          "Hash": "XF4W388eWrGv5/9DxmkZUsph4CGl431ieEK3hU2M3/Q=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
