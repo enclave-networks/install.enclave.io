@@ -2323,6 +2323,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 2,
+      "BuildVersion": 2,
+      "RevisionVersion": 502,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1675334563,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-stable-2023.02.02.502.zip",
+          "Hash": "G8F+lZXjdYI8uWVVBnOIlmQyytcnxMbaMSl9Cfnfx1c=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
