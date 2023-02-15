@@ -2343,6 +2343,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 2,
+      "BuildVersion": 15,
+      "RevisionVersion": 505,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1676459256,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2023.02.15.505.zip",
+          "Hash": "X89Cn/A5BWN6MMvPtHcAu8tXUwXIDZvRX+V2nHMPTPw=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
