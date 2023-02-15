@@ -5,13 +5,11 @@
   "TimeToLive": 60,
   "ReleaseVersions": [
     {
-      "Version": null,
       "MajorVersion": 2023,
       "MinorVersion": 2,
       "BuildVersion": 2,
       "RevisionVersion": 502,
       "ReleaseType": "GA",
-      "ReleaseChannel": "Stable",
       "ReleaseDate": 1676460936,
       "HardStop": -1,
       "TargetEnvironment": "Production",
@@ -21,6 +19,26 @@
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2023.02.02.pkg",
           "Hash": "olVGP+ng+o1XIE1qcwVDwUnFauN6mRmsMhBc6oK/VZw=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 2,
+      "BuildVersion": 15,
+      "RevisionVersion": 507,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1676466412,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-unstable-2023.02.15.pkg",
+          "Hash": "GY9Of3dSSU75RZgBQWXaBeY5WIMao2GbnedIPlIYoBA=",
           "HashAlg": "Sha256"
         }
       ],
