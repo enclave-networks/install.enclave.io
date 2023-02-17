@@ -158,14 +158,14 @@ preinstall() {
         "raspbian")
             sudo apt update -qq
             # Different versions of Raspbian ship different versions of libicu
-            deps+=("$(apt-cache search -n "^libicu[0-9]+$" | cut -d" " -f1)" "libsodium-dev")
+            deps+=("$(apt-cache search -n "^libicu[0-9]+$" | cut -d" " -f1)" "libsodium-dev" "iptables")
             # Install dependencies
             sudo apt install -yq "${deps[@]}"
             ;;
         "rhel-legacy")
             # This is primarly for RHEL 7 and older as they don't support our new RPM version
             # Install deps for rhel/fedora/centos
-            deps+=(libicu)
+            deps+=(libicu iptables)
             sudo yum install -y "${deps[@]}"
             ;;
         "rhel")
@@ -182,7 +182,7 @@ preinstall() {
             ;;
         "arch")
             # Install arch linux deps
-            deps+=(icu libsodium)
+            deps+=(icu libsodium iptables)
             sudo pacman -Syq --noconfirm --needed "${deps[@]}"
             ;;
         *)
