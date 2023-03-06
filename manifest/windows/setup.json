@@ -1787,6 +1787,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 3,
+      "BuildVersion": 6,
+      "RevisionVersion": 589,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1678118044,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2023.3.6.589.exe",
+          "Hash": "VJ0l+RwO3eeOPISeTPahzrnz828H5mQgzaXrw8HT1LE=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
