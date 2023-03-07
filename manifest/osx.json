@@ -2543,6 +2543,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 3,
+      "BuildVersion": 7,
+      "RevisionVersion": 526,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1678197314,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2023.03.07.526.zip",
+          "Hash": "83OC+0AZzMzVUp1MBGK2pf6Dnuczmxs3G99VOc4WzKs=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
