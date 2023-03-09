@@ -6551,6 +6551,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 3,
+      "BuildVersion": 9,
+      "RevisionVersion": 1015,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1678378750,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2023.03.09.1015.tar.gz",
+          "Hash": "M53XbgzbQzHgX2TPm37hIL8ABjhSxFQvqfLEDyd1HU8=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2023.03.09.1015.tar.gz",
+          "Hash": "d654+m2EHxQ8mExlJpFYlAVIB4R3tzP4C+a45znEvLc=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2023.03.09.1015.tar.gz",
+          "Hash": "3ODcykJ0yoyP5YfU3KNTyM6NtneSWANwbb5gQOrkZpc=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
