@@ -718,6 +718,32 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 3,
+      "BuildVersion": 9,
+      "RevisionVersion": 627,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1678379013,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2023.3.9.627.exe",
+          "Hash": "SmZAv6I7HV47WYPY+bjktg65kQ5i0DCB3J5BiPovn70=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2023.3.9.627.exe",
+          "Hash": "J8QZUE6mtbSa/qJFcz2ta51Wz6gNYh2XQNjqfE7aT4E=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
