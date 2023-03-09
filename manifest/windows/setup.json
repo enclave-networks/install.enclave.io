@@ -1901,6 +1901,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 3,
+      "BuildVersion": 9,
+      "RevisionVersion": 628,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1678381874,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-2023.3.9.628.exe",
+          "Hash": "NYiqtdw7oTbyHzurIi2moQJlzMLsQrR2pC7pMk1WHMo=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
