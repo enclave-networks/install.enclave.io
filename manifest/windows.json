@@ -2249,7 +2249,7 @@
       "BuildVersion": 19,
       "RevisionVersion": 706,
       "ReleaseType": "RC",
-      "ReleaseDate": 1681898140,
+      "ReleaseDate": 1681898377,
       "HardStop": 0,
       "TargetEnvironment": "Production",
       "Packages": [
@@ -2257,21 +2257,21 @@
           "Platform": "Windows",
           "Architecture": "X64",
           "Url": "https://release.enclave.io/enclave-windows-x64-rc-2023.4.19.706.zip",
-          "Hash": "nrJcYWeYIs2slXwlvGI4rSiwEf/M6C3rjbx/JStvw8g=",
+          "Hash": "B9DAhXmgrxLa6PO2UaG5fVnBx/Ca2eKzkZl//I3fxxg=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Windows",
           "Architecture": "X86",
           "Url": "https://release.enclave.io/enclave-windows-x86-rc-2023.4.19.706.zip",
-          "Hash": "9hGpRrrJLsfMXZkQ2tsGlCEzRnUknr3BdynB9hWyAPg=",
+          "Hash": "F7RNB5lnf+Va6/OUsHdOu93Gz96wDcB+sm1cwLw0Nts=",
           "HashAlg": "Sha256"
         },
         {
           "Platform": "Windows",
           "Architecture": "Arm64",
           "Url": "https://release.enclave.io/enclave-windows-arm64-rc-2023.4.19.706.zip",
-          "Hash": "BQI/H3ZEmHDQc2zTAU45mIQ0wbykZmE3TondQJc8wnk=",
+          "Hash": "88zymvgScfzJBO9BLkn4+rkBC3o1QtbJl7r6JDBDB1c=",
           "HashAlg": "Sha256"
         }
       ]
