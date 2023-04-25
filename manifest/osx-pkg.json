@@ -583,6 +583,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 4,
+      "BuildVersion": 25,
+      "RevisionVersion": 580,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1682436610,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2023.4.25.pkg",
+          "Hash": "i3zgm+57UMZZsX5rfCIEnu0cUQjpR3BsBfN/mbif9hM=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
