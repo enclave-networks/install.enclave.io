@@ -36,32 +36,55 @@ get_distro_family() {
         # Use the built in RPM macro to determine current fedora version if the version isn't good enough we fall back to a manual install
         # These macros are the same ones used when making an RPM package so can be relied upon
         FEDVER=$(rpm -E %{fedora})
+
+        # Check that the Fedver value is a number before doing a greater than or equals on it
+        re="^[0-9]+$"
         # Fedora 34 is chosen here as we know it's got a new enough version of RPM to work with enclave
-        if [[ $FEDVER -ge 34 ]] 
+        if [[  "$FEDVER" =~ $re && $FEDVER -ge 34 ]]
         then  
             echo "rhel"
+            return
         fi
-    elif  grep -qi "amzn" /etc/os-release; then
+    fi
+
+    if  grep -qi "amzn" /etc/os-release; then
         echo "rhel-legacy"
-    elif grep -qi "rhel" /etc/os-release; then
+        return
+    fi
+
+    if grep -qi "rhel" /etc/os-release; then
         # Use the built in RPM macro to determine current rhel version if the version isn't good enough we fall back to a manual install
         # These macros are the same ones used when making an RPM package so can be relied upon
         RHELVER=$(rpm -E %{rhel})
         if [[ $RHELVER -ge 8 ]]
         then  
             echo "rhel"
-        elif [[ $RHELVER -le 7 ]] 
+            return
+        elif [[ $RHELVER -le 7 ]]
         then
             echo "rhel-legacy"
+            return
         fi
-    elif grep -qi "suse" /etc/os-release; then 
+    fi
+
+    if grep -qi "suse" /etc/os-release; then 
         echo "suse"
-    elif grep -qi "raspbian" /etc/os-release; then
+        return
+    fi
+
+    if grep -qi "raspbian" /etc/os-release; then
         echo "raspbian"
-    elif grep -qi "debian" /etc/os-release || grep -qi "ubuntu" /etc/os-release; then
+        return
+    fi
+
+    if grep -qi "debian" /etc/os-release || grep -qi "ubuntu" /etc/os-release; then
         echo "debian"
-    elif grep -qi "arch" /etc/os-release; then
+        return
+    fi
+
+    if grep -qi "arch" /etc/os-release; then
         echo "arch"
+        return
     fi
 }
 
