@@ -1025,8 +1025,8 @@
         {
           "Platform": "Windows",
           "Architecture": "Arm64",
-          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-2023.4.25.720.msi",
-          "Hash": "LV+aVTSYwGHGP74vFU+cMAPloFVjd0EWxbGljqwQ7XY=",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-arm64-2023.4.25.720.msi",
+          "Hash": "TTeILJ6gqslxUzW9TjY6zjFBxKhqSy4UeYzIA/e4axg=",
           "HashAlg": "Sha256"
         }
       ]
