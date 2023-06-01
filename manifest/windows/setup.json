@@ -1996,6 +1996,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 6,
+      "BuildVersion": 1,
+      "RevisionVersion": 877,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1685613531,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2023.6.1.877.exe",
+          "Hash": "sTkD9AH7IzEjAu1eegSwFNadz6OPsXtCo8sayb+JnWo=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
