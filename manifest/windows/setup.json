@@ -2015,6 +2015,25 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 6,
+      "BuildVersion": 2,
+      "RevisionVersion": 888,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1685699326,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-2023.6.2.888.exe",
+          "Hash": "33q8tjUecB5ukyWJiNnFy3yGPx5+dOfn3esngg9xnZg=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }

@@ -1096,6 +1096,39 @@
           "HashAlg": "Sha256"
         }
       ]
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 6,
+      "BuildVersion": 2,
+      "RevisionVersion": 888,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1685699326,
+      "HardStop": 0,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-2023.6.2.888.msi",
+          "Hash": "alCEwfVkO7fvcIGvHXaNQ1qQJLzXpgUifXSrKXFuCEk=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-2023.6.2.888.msi",
+          "Hash": "hm3mWPDnAiOFp4eZ2D5Z0UFWc1mzJVqMO2WfpbgUW54=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-arm64-2023.6.2.888.msi",
+          "Hash": "9fIi3vHX0FzsD0f+iiGeqSP4wENLB2BbxiWEbaFjkMs=",
+          "HashAlg": "Sha256"
+        }
+      ]
     }
   ]
 }
