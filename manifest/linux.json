@@ -7333,6 +7333,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 6,
+      "BuildVersion": 2,
+      "RevisionVersion": 1277,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1685700171,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2023.6.2.1277.tar.gz",
+          "Hash": "a220Q6ldjKKD9nb8vN3FsTG8/jGYLMl1d1zjyv6o7qI=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2023.6.2.1277.tar.gz",
+          "Hash": "5s/ynbk3mkUDwtztdbTOCoClVEN9Nk81oTRKUGAYoaU=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2023.6.2.1277.tar.gz",
+          "Hash": "4/AFZ8P/nrxWbQgxPtIUGTHPnB8NHfS9T4z42iwfvGo=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
