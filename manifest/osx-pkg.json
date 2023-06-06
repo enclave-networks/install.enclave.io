@@ -883,6 +883,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 6,
+      "BuildVersion": 6,
+      "RevisionVersion": 615,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1686053897,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2023.6.6.pkg",
+          "Hash": "SicK76XEw9G6s4WnHv17DfGhxmobC9fXJ17GOaO5GL8=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
