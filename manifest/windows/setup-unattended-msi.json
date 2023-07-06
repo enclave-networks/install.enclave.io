@@ -1,5 +1,7 @@
 {
   "ProductName": "Enclave Unattended MSI Installer",
+  "DocumentHash": null,
+  "DocumentSignature": null,
   "TimeToLive": 60,
   "ReleaseVersions": [
     {
@@ -19,7 +21,8 @@
           "Hash": "Hf0akCN9aI70gop8rL5WH7bXRw2VaTS+VArhmYlmT3w=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -38,7 +41,8 @@
           "Hash": "cCbHU2mk5/7Qz2wbPJGceC8VzKwy4OrPoDLoPMZZmAU=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -57,7 +61,8 @@
           "Hash": "Pl17VUx4D1k/Ilv4MZ8KdOW8MCTf0mWP2hZ7bk62+hI=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -76,7 +81,8 @@
           "Hash": "W/ToY3ko58ptt9DOm5Ffk7i9auYy+zmF/jvERs8uny0=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -95,7 +101,8 @@
           "Hash": "5oanNlK2PXz58TQf0cqw28L4FEZKaeYJCUs7Uqc1d1M=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -114,7 +121,8 @@
           "Hash": "R1ZdOAw8LMMPKoMaH/i+3QJ7JL7JrsFI/pJSQjLN0Qw=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -133,7 +141,8 @@
           "Hash": "1OItgYY2t/M/qbgmS/u9yn8Nn8UDIwc2evgREdFIcqg=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -152,7 +161,8 @@
           "Hash": "mfJg1N2RJUG04TuBZflW1Cbdtt+7Ed5pt4kGMgVd7k0=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -171,7 +181,8 @@
           "Hash": "FWXQT3MPhKt5syzqc1zKZbAuI3iChu6R9W1z5IgsfZM=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -204,7 +215,8 @@
           "Hash": "CeswHWvaTmdtLZSoYwc5v/ywXyvja8Mi3/nIpuEL8bo=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -237,7 +249,8 @@
           "Hash": "MrazXyvpcIin9Akiwi7GC3zR+k8CEkmYQSl91GJmoA4=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -270,7 +283,8 @@
           "Hash": "XroSlIiogmIv6ohQswB845wp+CWvurWfparFqnXlzaY=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -303,7 +317,8 @@
           "Hash": "9qAxR7DHa3pk98SW4WDi9zuC8Tvz1P/3NvCM/eSmvio=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -336,7 +351,8 @@
           "Hash": "b47lO2dk80hdZLvaRnZZ4i9FA9Sdf0s8Ih+Ht1hj1wQ=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -369,7 +385,8 @@
           "Hash": "0NdQahsOD1ch4tE94RiIaRA7m0QetM7CLxqv+aFDZmM=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -402,7 +419,8 @@
           "Hash": "ta3uzueSXfefKdGuiRHb2HS44tuK1gUpat4dFf1VxbU=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -435,7 +453,8 @@
           "Hash": "uy5FAjDlJNATUtLPmXXzZzpfeC4fEcLlxdd+fLEufnQ=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2022,
@@ -468,7 +487,8 @@
           "Hash": "kjkc1pO1wqad19quhluxPxVyxu90aqCLrr/zVOQBWIQ=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -501,7 +521,8 @@
           "Hash": "aBSY8oYfbI4tOfrYZUwQ+zueovwfrD/3DH6ggUIC8HA=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -534,7 +555,8 @@
           "Hash": "BQ7mof21919rXY6jZggWMLls8lBTqXsSVtVRe/yE01I=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -567,7 +589,8 @@
           "Hash": "sIGfI0BAqspqnOv90Ol3Y6GJFdXhINZw+KBnhujXg1Y=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -600,7 +623,8 @@
           "Hash": "PvmlRxh82t76c+AIXIrgErmtllXni/4HVMkNIl6Az9U=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -633,7 +657,8 @@
           "Hash": "VGyq8d5It4whf8qWAWsfUKCFs6YUrSf4IWxNILmTSZA=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -666,7 +691,8 @@
           "Hash": "LKB48R86BMMr/W7OV/9ErBGjuS8x+74SZxEN/+cZdcU=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -699,7 +725,8 @@
           "Hash": "elC78gqLuJfFjKpdRThv7sFkD1YYnF0uBRvIH+gxd0E=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -732,7 +759,8 @@
           "Hash": "UvFNdxAremz3ybZxQCruRTRKASFqC7FS+lmFzPAftUY=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -765,7 +793,8 @@
           "Hash": "gYkygfv+uZfl2cA5TnVhT8IszvhT0RvdZfAn0R56ed8=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -798,7 +827,8 @@
           "Hash": "izFux0i8C73INQy0oCZ+5UjLGsIPk9OCQ64vfhhTQ8s=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -831,7 +861,8 @@
           "Hash": "H9TZHigd2fG3FjFGB6Et9lYOdLJJ2obctIhuBHFhguI=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -864,7 +895,8 @@
           "Hash": "kK0Wg6u7IAvxpMCreyc9VjUSwS4VW+BDKpaRsyo5uzM=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -897,7 +929,8 @@
           "Hash": "fVnhfK37+l9Rgzrc79OF36b25D6rJy/ZR9uZCk/4hf8=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -930,7 +963,8 @@
           "Hash": "16GwxPgtm7muWaraf5kzxa1lrvBM2ojAslml8BTjHk4=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -963,7 +997,8 @@
           "Hash": "3mlBTzYPzXiVnsZU12HbQEkxhlmVax3Q+Co9hj3iX0w=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -996,7 +1031,8 @@
           "Hash": "un3xxcZ3hOPEJCI7sAAuML/1A8uPkUPbNBAaS5OREEI=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -1029,7 +1065,8 @@
           "Hash": "TTeILJ6gqslxUzW9TjY6zjFBxKhqSy4UeYzIA/e4axg=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -1062,7 +1099,8 @@
           "Hash": "k3fqt58d+S4tGrZh2E/2R597Bhwl0kcKKA0aLwGw7nk=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -1095,7 +1133,8 @@
           "Hash": "b25wQ0gT/+4CudFWK3HGvKy+wktXoPz0sUDhp5brGTk=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -1128,7 +1167,8 @@
           "Hash": "9fIi3vHX0FzsD0f+iiGeqSP4wENLB2BbxiWEbaFjkMs=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -1161,7 +1201,8 @@
           "Hash": "bnPdSxvAQz/WL5ofQKk+IFB3Rib/sr8FHtkwlZkPBos=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -1194,7 +1235,8 @@
           "Hash": "MqLKUk3zbxvSV5JgYkUJyeE6NSeCtyUMxqzThvmh3PA=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
     },
     {
       "MajorVersion": 2023,
@@ -1227,7 +1269,42 @@
           "Hash": "7s9rmEVBcQl4cL7ZoImJ+3E2uM8bvIPKfACmd/6+XCk=",
           "HashAlg": "Sha256"
         }
-      ]
+      ],
+      "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 7,
+      "BuildVersion": 6,
+      "RevisionVersion": 953,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1688662759,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-arm64-rc-2023.7.6.953.msi",
+          "Hash": "60vfPhZ2fJwBEaGhqO/Yuty4bob0zJZo3Rctxib6U1g=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2023.7.6.953.msi",
+          "Hash": "aGeKqFIli10peBtvuBVbHLfQIJWFhMZrLuJNrYgnl08=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2023.7.6.953.msi",
+          "Hash": "skRnrnJ69cYpUbTHzxaovvNl69e7nBrqGDc+UK90NrY=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
