@@ -1339,6 +1339,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 7,
+      "BuildVersion": 12,
+      "RevisionVersion": 962,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1689156850,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-arm64-rc-2023.7.12.962.msi",
+          "Hash": "1vklNuEbW2R+jlmZBbnaQ0GbzaeLPi16ds5727x2e7o=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2023.7.12.962.msi",
+          "Hash": "apPjpZFDprQZfXPxwdMF+JqQ1+xYejnhjdQUXdzCZzw=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2023.7.12.962.msi",
+          "Hash": "eZLAy6/UHc4AM12IhI+24I/4Dd1WDt4n7RzgcoDMfmA=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
