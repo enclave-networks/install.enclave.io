@@ -2303,6 +2303,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 7,
+      "BuildVersion": 20,
+      "RevisionVersion": 986,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1689846141,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2023.7.20.986.exe",
+          "Hash": "pvjJeQxpfQVnxFzx0x9dC1GNkXp/6IJgE4gxf/JBK3o=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
