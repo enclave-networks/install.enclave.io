@@ -2463,6 +2463,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 8,
+      "BuildVersion": 7,
+      "RevisionVersion": 1034,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1691415734,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2023.8.7.1034.exe",
+          "Hash": "aiaP4ZldLdK9vArFErLIcWtQ7SzeFBJaX4KJog5Hv/k=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
