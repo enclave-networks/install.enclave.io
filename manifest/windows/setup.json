@@ -2503,6 +2503,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 8,
+      "BuildVersion": 11,
+      "RevisionVersion": 1046,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1691758982,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2023.8.11.1046.exe",
+          "Hash": "NbPRSVjPFnwY1Q+HDjd+Zm0pmRvPjijnI+tGoTHW58A=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
