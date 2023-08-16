@@ -2563,6 +2563,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 8,
+      "BuildVersion": 16,
+      "RevisionVersion": 1059,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1692180805,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2023.8.16.1059.exe",
+          "Hash": "bh4KcEbKOa30qJjhDpGZYU0MevXAMgQdZbnzrgp0sqQ=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
