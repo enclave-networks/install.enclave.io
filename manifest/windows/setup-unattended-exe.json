@@ -1668,6 +1668,33 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 8,
+      "BuildVersion": 21,
+      "RevisionVersion": 1122,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1692634252,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2023.8.21.1122.exe",
+          "Hash": "E420naEe60xTD3emif6g/xpbbXgfFEEqFnITANDG+nA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2023.8.21.1122.exe",
+          "Hash": "8CrCBVFpnsJ7hD2eY1ZzEpmVzeOBARZQ2iDzlN8cVMU=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
