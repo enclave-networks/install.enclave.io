@@ -8353,6 +8353,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 8,
+      "BuildVersion": 22,
+      "RevisionVersion": 1496,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1692704552,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2023.8.22.1496.tar.gz",
+          "Hash": "sqeAwqiPw6pu1SDq7WWZnqoXCO4cA9QOCDg+IV2aXtc=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2023.8.22.1496.tar.gz",
+          "Hash": "ZWTyuXP2KeEcvsxujwakEXgCLD4piqSteRFWdZEhB2A=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2023.8.22.1496.tar.gz",
+          "Hash": "7LxKlkeOt6HTlbcVDi3cWXeg9cfxNj2VIONdFoT5RB0=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
