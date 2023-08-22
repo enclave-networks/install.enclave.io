@@ -2723,6 +2723,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 8,
+      "BuildVersion": 22,
+      "RevisionVersion": 1137,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1692706504,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-2023.8.22.1137.exe",
+          "Hash": "oiNLXG1cV0/eu1v9MK0qYceE2veqguU8l/3Y+twwESk=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
