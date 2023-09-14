@@ -1623,6 +1623,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 9,
+      "BuildVersion": 14,
+      "RevisionVersion": 706,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1694682766,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-unstable-2023.9.14.pkg",
+          "Hash": "RXQcgW0YO35xnmJZcxLH5j810KI0DWwKIHKxiqpETdw=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
