@@ -261,14 +261,16 @@ remove_enclave() {
             ;;
         *)
             # Default Case
+            sudo rm -rfd /etc/enclave/
             sudo rm -rf /usr/bin/enclave
             sudo rm -rf /usr/lib/systemd/system/enclave.service
             sudo rm -rf /usr/lib/systemd/user/enclave-auth.service
             sudo rm -rf /usr/share/doc/enclave
             sudo rm -rf /root/.net/enclave
-            sudo rm -rfd /etc/enclave/
             ;;
     esac
+
+    exit 0
 }
 
 install_enclave() {
@@ -351,7 +353,7 @@ start_fabric() {
     fi
 }
 
-while getopts "a:v:l:hu" options
+while getopts "a:v:l:hur" options
 do
     case "${options}" in
         a) ENCLAVE_ARCH="${OPTARG}" ;;
