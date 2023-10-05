@@ -241,7 +241,7 @@ remove_enclave() {
         info "Enclave service stopped."
     fi
 
-    # Stop enclave auth daemon
+    # Stop enclave auth daemon before remove (don't care if this fails)
     if systemctl --user disable --now enclave-auth.service >/dev/null 2>&1; then
         info "Enclave auth service stopped."
     fi
