@@ -259,14 +259,15 @@ remove_enclave() {
         "suse")
             sudo zypper rm -n enclave
             ;;
-        *)
-            # Default Case
-            sudo rm -rfd /etc/enclave/
+        *) # Default Case
+            # Files
             sudo rm -rf /usr/bin/enclave
             sudo rm -rf /usr/lib/systemd/system/enclave.service
             sudo rm -rf /usr/lib/systemd/user/enclave-auth.service
-            sudo rm -rf /usr/share/doc/enclave
-            sudo rm -rf /root/.net/enclave
+            # Directories 
+            sudo rm -rfd /etc/enclave/
+            sudo rm -rfd /usr/share/doc/enclave/
+            sudo rm -rfd /root/.net/enclave/
             ;;
     esac
 
