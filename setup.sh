@@ -18,6 +18,7 @@ usage() {
     echo -e "\t -e ENROLMENT_KEY   optional\t Specify an enrolment key for install"
     echo -e "\t -v VERSION         optional\t Specify version to install"
     echo -e "\t -u                 optional\t Use unstable channel for package repositories"
+    echo -e "\t -r                 optional\t Remove enclave from this system"
     echo -e "\t -h                 optional\t Display this message"
     [[ "${1:-}" == "error" ]] && exit 1
     exit 0
@@ -234,6 +235,45 @@ get_arch() {
     esac
 }
 
+remove_enclave() {
+    # Stop supervisor service before remove (don't care if this fails)
+    if sudo systemctl disable --now enclave >/dev/null 2>&1; then
+        info "Enclave service stopped."
+    fi
+
+    # Stop enclave auth daemon before remove (don't care if this fails)
+    if systemctl --user disable --now enclave-auth.service >/dev/null 2>&1; then
+        info "Enclave auth service stopped."
+    fi
+
+    case $(get_distro_family) in
+        "debian")
+            sudo apt remove -y enclave
+            ;;
+        "raspbian")
+            sudo apt remove -y enclave
+            ;;
+        "rhel")
+            sudo dnf remove -y enclave
+            ;;
+        "suse")
+            sudo zypper rm -n enclave
+            ;;
+        *) # Default Case
+            # Files
+            sudo rm -rf /usr/bin/enclave
+            sudo rm -rf /usr/lib/systemd/system/enclave.service
+            sudo rm -rf /usr/lib/systemd/user/enclave-auth.service
+            # Directories 
+            sudo rm -rfd /etc/enclave/
+            sudo rm -rfd /usr/share/doc/enclave/
+            sudo rm -rfd /root/.net/enclave/
+            ;;
+    esac
+
+    exit 0
+}
+
 install_enclave() {
     # Stop supervisor service before install / upgrade (don't care if this fails)
     if sudo systemctl stop enclave >/dev/null 2>&1; then
@@ -314,13 +354,14 @@ start_fabric() {
     fi
 }
 
-while getopts "a:v:l:hu" options
+while getopts "a:v:l:hur" options
 do
     case "${options}" in
         a) ENCLAVE_ARCH="${OPTARG}" ;;
         v) ENCLAVE_VERSION="${OPTARG}" ;;
         e) ENCLAVE_ENROLMENT_KEY="${OPTARG}" ;;
         u) ENCLAVE_PKG_LIST="enclave.unstable.list" ;;
+        r) remove_enclave ;;
         h) usage ;;
         :) usage error ;;
         *) usage error ;;
