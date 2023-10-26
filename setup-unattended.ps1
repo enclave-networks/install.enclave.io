@@ -13,7 +13,7 @@ param (
 $ProgressPreference = 'SilentlyContinue';
 $ErrorActionPreference = 'Stop';
 
-$manifestDoc = Invoke-WebRequest -Uri "https://install.enclave.io/manifest/windows/setup-unattended-msi.json" | ConvertFrom-Json;
+$manifestDoc = Invoke-WebRequest -Uri "https://install.enclave.io/manifest/windows/setup-unattended-msi.json" -UseBasicParsing | ConvertFrom-Json;
 
 $latestGaRelease = $manifestDoc.ReleaseVersions | Where-Object ReleaseType -EQ "GA" | Select-Object -Last 1;
 
@@ -72,7 +72,7 @@ if ($newEnclaveVersion -ne $existingEnclaveVersion)
         $vcRedistInstallPath = Join-Path $env:TEMP "enclave_vcredist.exe";
     
         # No existing version; install latest VC++ (will quickly complete if it already exists)
-        Invoke-WebRequest -Uri $vcRedistUrl -OutFile $vcRedistInstallPath;
+        Invoke-WebRequest -Uri $vcRedistUrl -UseBasicParsing -OutFile $vcRedistInstallPath;
 
         & $vcRedistInstallPath "/install" "/silent" "/norestart";
     }
@@ -82,7 +82,7 @@ if ($newEnclaveVersion -ne $existingEnclaveVersion)
     $enclaveInstallerFile = Join-Path $env:TEMP "enclave-$newEnclaveVersion.msi";
     $enclaveInstallLogFile = Join-Path $env:TEMP "enclave-$newEnclaveVersion.install.log"
 
-    Invoke-WebRequest $selectedPackage.Url -OutFile $enclaveInstallerFile;
+    Invoke-WebRequest $selectedPackage.Url -UseBasicParsing -OutFile $enclaveInstallerFile;
 
     if ($existingEnclaveVersion)
     {
