@@ -21,8 +21,10 @@ $newEnclaveVersion = "$($latestGaRelease.MajorVersion).$($latestGaRelease.MinorV
 
 $ErrorActionPreference = 'SilentlyContinue';
 
-$enclaveBinaryPath = "C:\Program Files\Enclave Networks\Enclave\Agent\bin\enclave.exe";
-$enclaveTrayPath = "C:\Program Files\Enclave Networks\Enclave\Agent\bin\enclave-tray.exe";
+$programFiles = [Environment]::GetFolderPath([Environment+SpecialFolder]::ProgramFiles);
+
+$enclaveBinaryPath = "$programFiles\Enclave Networks\Enclave\Agent\bin\enclave.exe";
+$enclaveTrayPath = "$programFiles\Enclave Networks\Enclave\Agent\bin\enclave-tray.exe";
 
 $existingEnclaveVersion = $(get-command $enclaveBinaryPath);
 
@@ -65,7 +67,7 @@ if ($newEnclaveVersion -ne $existingEnclaveVersion)
 
     if (!$existingEnclaveVersion)
     {
-        "Installing VC++ Redistributable if needed";
+        "Installing VC++ Redistributable";
 
         $vcRedistInstallPath = Join-Path $env:TEMP "enclave_vcredist.exe";
     
@@ -75,7 +77,7 @@ if ($newEnclaveVersion -ne $existingEnclaveVersion)
         & $vcRedistInstallPath "/install" "/silent" "/norestart";
     }
 
-    "Downloading latest enclave version from $($selectedPackage.Url)";
+    "Downloading latest enclave version $newEnclaveVersion from $($selectedPackage.Url)";
 
     $enclaveInstallerFile = Join-Path $env:TEMP "enclave-$newEnclaveVersion.msi";
     $enclaveInstallLogFile = Join-Path $env:TEMP "enclave-$newEnclaveVersion.install.log"
