@@ -1,6 +1,5 @@
 #
-# This script will install or up
-#
+# This script will silently install or update enclave on a Windows system.
 #
 [CmdletBinding()]
 param (
