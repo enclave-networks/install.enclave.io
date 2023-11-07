@@ -3323,6 +3323,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 11,
+      "BuildVersion": 7,
+      "RevisionVersion": 1354,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1699375954,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2023.11.7.1354.exe",
+          "Hash": "G25IA+aRRsJwtN4F8+rirGC4txXs2PP71MXmtSmTMYM=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
