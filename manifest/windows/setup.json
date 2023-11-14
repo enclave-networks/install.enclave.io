@@ -3363,6 +3363,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 11,
+      "BuildVersion": 14,
+      "RevisionVersion": 1358,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1699975600,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-2023.11.14.1358.exe",
+          "Hash": "U9S2pREgAZRYfe4uLmrlFVZqzoBZnnEX1134ooAGtlk=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
