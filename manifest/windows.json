@@ -4657,6 +4657,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 11,
+      "BuildVersion": 29,
+      "RevisionVersion": 1368,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1701261882,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-windows-arm64-rc-2023.11.29.1368.zip",
+          "Hash": "MBf80lo8SBUasfsyRsz616GcNCbT0VIkXN2G3da5ZYc=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2023.11.29.1368.zip",
+          "Hash": "m1yjqI37Lv+KWCYjrn/Rrl+tahalf17xXWHmLeHJks8=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-windows-x86-rc-2023.11.29.1368.zip",
+          "Hash": "iA+Q2ACrPrKpNorb260hRwfX8SJfWy0/twJuOocEVnI=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
