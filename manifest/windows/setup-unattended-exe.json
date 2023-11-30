@@ -2667,6 +2667,33 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 11,
+      "BuildVersion": 30,
+      "RevisionVersion": 1372,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1701344029,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2023.11.30.1372.exe",
+          "Hash": "ZJZE+Dy1AjiqN8FjEqVKik4VltarVql7dNvohSekd6U=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2023.11.30.1372.exe",
+          "Hash": "7hqNkAYSEjOEQu+VgMhnS4WW4cSUOKWvcIgR4B3uaH8=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
