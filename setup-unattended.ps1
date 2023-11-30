@@ -66,7 +66,7 @@ if ($newEnclaveVersion -ne $existingEnclaveVersion)
 
     if (!$existingEnclaveVersion)
     {
-        "Installing VC++ Redistributable";
+        Write-Host "Installing VC++ Redistributable";
 
         $vcRedistInstallPath = Join-Path $env:TEMP "enclave_vcredist.exe";
     
@@ -76,7 +76,7 @@ if ($newEnclaveVersion -ne $existingEnclaveVersion)
         & $vcRedistInstallPath "/install" "/silent" "/norestart";
     }
 
-    "Downloading latest enclave version $newEnclaveVersion from $($selectedPackage.Url)";
+    Write-Host "Downloading latest enclave version $newEnclaveVersion from $($selectedPackage.Url)";
 
     $enclaveInstallerFile = Join-Path $env:TEMP "enclave-$newEnclaveVersion.msi";
     $enclaveInstallLogFile = Join-Path $env:TEMP "enclave-$newEnclaveVersion.install.log"
@@ -85,20 +85,20 @@ if ($newEnclaveVersion -ne $existingEnclaveVersion)
 
     if ($existingEnclaveVersion)
     {
-        "Closing any open instances of the enclave tray"
+        Write-Host "Closing any open instances of the enclave tray"
         Get-Process "enclave-tray" -ErrorAction SilentlyContinue | Stop-Process -ErrorAction SilentlyContinue
     }
     
     if ($existingEnclaveVersion -or !$EnrolmentKey)
     {
         # Don't need to re-enrol, we're already installed, or we don't have an enrolment key, so don't provide one to the installer.
-        "Installing enclave; writing install log to $enclaveInstallLogFile"
+        Write-Host "Installing enclave; writing install log to $enclaveInstallLogFile"
         Start-Process msiexec "/i $enclaveInstallerFile /qn /l*v $enclaveInstallLogFile" -Wait
     }
     else 
     {
         # Not installed, provide the enrolment key.
-        "Installing enclave and enrolling; writing install log to $enclaveInstallLogFile"
+        Write-Host "Installing enclave and enrolling; writing install log to $enclaveInstallLogFile"
         Start-Process msiexec "/i $enclaveInstallerFile /qn /l*v $enclaveInstallLogFile ENROLMENT_KEY=$EnrolmentKey" -Wait
 
         # Make sure we purge the enrolment key from the log file.
@@ -116,7 +116,7 @@ if ($newEnclaveVersion -ne $existingEnclaveVersion)
 }
 else 
 {
-    "Nothing to do; local installation is already at latest version $existingEnclaveVersion"
+    Write-Host "Nothing to do; local installation is already at latest version $existingEnclaveVersion"
 }
 
 # Get installed enclave status.
