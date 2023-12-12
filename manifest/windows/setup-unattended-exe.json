@@ -2775,6 +2775,33 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 12,
+      "BuildVersion": 12,
+      "RevisionVersion": 1400,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1702391485,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-2023.12.12.1400.exe",
+          "Hash": "GX5be6efpF1NCjkcQXorY2SAq+b3n87vRPbLgzCUPKM=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-2023.12.12.1400.exe",
+          "Hash": "Vr8w9RecO0Stg8n7KKXX8KWSehQxBfPjgMon7Fmmbhc=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }

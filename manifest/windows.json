@@ -4827,6 +4827,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 12,
+      "BuildVersion": 12,
+      "RevisionVersion": 1400,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1702391479,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-windows-arm64-2023.12.12.1400.zip",
+          "Hash": "jg2DqD9aYXiBVT6IHjiXBBnAE+t3wsDRzFLqvXqXcV4=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-2023.12.12.1400.zip",
+          "Hash": "nUT70q7BMaFf+uKIUpJd/9N3JVGqoZdnQ6kosBFmnL0=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-windows-x86-2023.12.12.1400.zip",
+          "Hash": "e/02ljsDsPtI1msgQU3e2Lu5YAQTq1BqDteUKi2Cz5Q=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
