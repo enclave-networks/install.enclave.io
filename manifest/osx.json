@@ -4563,6 +4563,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2023,
+      "MinorVersion": 12,
+      "BuildVersion": 12,
+      "RevisionVersion": 770,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1702390416,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-stable-2023.12.12.770.zip",
+          "Hash": "5fpbEESsqzk0W2XOhDPFU55EMp0WAuKR45v2TZaFqcs=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
