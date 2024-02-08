@@ -9611,6 +9611,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 2,
+      "BuildVersion": 8,
+      "RevisionVersion": 1793,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1707408553,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2024.2.8.1793.tar.gz",
+          "Hash": "CbZgWzElmhZDyDkdqYZ7mBjGd0DlkMZ67S8kOGDu+bA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2024.2.8.1793.tar.gz",
+          "Hash": "3dFmhC2kChMLrlRa1il0CPpjZCKtk7nVcStqg7DMDlY=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2024.2.8.1793.tar.gz",
+          "Hash": "P17jN2m/l6bi/Ox9sUy9QfqlzBAw58AtZdBR5xKYBQo=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
