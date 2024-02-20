@@ -4963,6 +4963,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 2,
+      "BuildVersion": 20,
+      "RevisionVersion": 1439,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1708450520,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-windows-arm64-rc-2024.2.20.1439.zip",
+          "Hash": "6HJ6OH/ltbmds5ruZwGBY5iRGrsAvA9bWP9CK2JoJd0=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2024.2.20.1439.zip",
+          "Hash": "R5ZItksZjbkltcLrn2EOsAvt4YGY12FT0o8upiQ+S9k=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-windows-x86-rc-2024.2.20.1439.zip",
+          "Hash": "UmALd6FMnEjlxxTc727puz6Zc5zeOHzBkGO4CS40/go=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
