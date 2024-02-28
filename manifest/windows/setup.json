@@ -3603,6 +3603,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 2,
+      "BuildVersion": 28,
+      "RevisionVersion": 1460,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1709124581,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2024.2.28.1460.exe",
+          "Hash": "PFgeH02c+eoOQKcJSW1PP+oQ7RXy291h76mhsyY4hh0=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
