@@ -4803,6 +4803,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 3,
+      "BuildVersion": 6,
+      "RevisionVersion": 809,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1709721428,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2024.3.6.809.zip",
+          "Hash": "uF5FpNUHEoPZZ6+qCKHyKD4SfCP/70ncRo6TgX+J0ck=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
