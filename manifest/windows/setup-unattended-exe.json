@@ -3153,6 +3153,33 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 3,
+      "BuildVersion": 12,
+      "RevisionVersion": 1497,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1710249130,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2024.3.12.1497.exe",
+          "Hash": "F3Ujpsj3OrvN7p/IM742Qc0ycQRUkS3O4M5+Sdha9eA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2024.3.12.1497.exe",
+          "Hash": "gubac01Zg1MfeN5rglHcD3E7Q3QcKRwnyQOaDgmn3BI=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
