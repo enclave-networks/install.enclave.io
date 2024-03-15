@@ -10155,6 +10155,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 3,
+      "BuildVersion": 15,
+      "RevisionVersion": 1882,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1710514796,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2024.3.15.1882.tar.gz",
+          "Hash": "UaxWoGpYr17EgkpbRMQjus+q/RkMEav5gStDYfuEr9M=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2024.3.15.1882.tar.gz",
+          "Hash": "DQToC6saoDIOA6tD9MAr7xTscV5m2wDP1fiYdwjcEYA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2024.3.15.1882.tar.gz",
+          "Hash": "D8z2YvSvTOSSVmFPkOC9h72wlKv27zqXDT5641zvimk=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
