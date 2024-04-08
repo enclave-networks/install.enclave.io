@@ -10189,6 +10189,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 4,
+      "BuildVersion": 8,
+      "RevisionVersion": 1890,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1712587397,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2024.4.8.1890.tar.gz",
+          "Hash": "N90nTBKC553gN6c/LMTaOAauGuouCU/IXP1gbTSIob4=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2024.4.8.1890.tar.gz",
+          "Hash": "RjgM9o8PldeQ+PCawNyLF2HGAmNbr7pELZhHNUB1dV8=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2024.4.8.1890.tar.gz",
+          "Hash": "c/mB2S9bFiRxJ8BhAtAFWKYoQNbu3ss/F7In9zo/wEI=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
