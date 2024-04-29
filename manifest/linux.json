@@ -10359,6 +10359,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 4,
+      "BuildVersion": 29,
+      "RevisionVersion": 1935,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1714400606,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2024.4.29.1935.tar.gz",
+          "Hash": "AGEOQ5GLXICovXHbwaXLlWuNlev5map0305MLeX1ejI=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2024.4.29.1935.tar.gz",
+          "Hash": "RrA6+H0e+McVy5oC0MNRzcZuRqxx0aOMzIcOl79UAr0=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2024.4.29.1935.tar.gz",
+          "Hash": "IMmnW19400t93shrabK9rNZezNHjfBFIE3CwysQf5Qg=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
