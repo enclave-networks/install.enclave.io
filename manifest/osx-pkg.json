@@ -2843,6 +2843,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 4,
+      "BuildVersion": 30,
+      "RevisionVersion": 857,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1714485835,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-unstable-2024.4.30.pkg",
+          "Hash": "nd5IPyGaB9Wn+VGWVVAxu2Y/nFHQSoKMD3K59ZbYzOo=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
