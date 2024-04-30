@@ -10495,6 +10495,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 4,
+      "BuildVersion": 30,
+      "RevisionVersion": 1946,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1714496498,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2024.4.30.1946.tar.gz",
+          "Hash": "MGWXmS47FvVRJBHsmh789Vxlc7lnHra5yeZ0a6WAEWA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2024.4.30.1946.tar.gz",
+          "Hash": "TyV47ANV2XHOrApcQYlW36CpyuTRlNOr8WCKss4pmrM=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2024.4.30.1946.tar.gz",
+          "Hash": "I134RYYGvNOBxTigVrShdhIi9YwPKUx8QZfRbSzBJoY=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
