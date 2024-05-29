@@ -86,7 +86,7 @@ if ($newEnclaveVersion -ne $existingEnclaveVersion)
     if ($existingEnclaveVersion)
     {
         Write-Host "Closing any open instances of the enclave tray"
-        Get-Process "enclave-tray" -ErrorAction SilentlyContinue | Stop-Process -ErrorAction SilentlyContinue
+        Get-Process "enclave-tray" -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
     }
     
     if ($existingEnclaveVersion -or !$EnrolmentKey)
