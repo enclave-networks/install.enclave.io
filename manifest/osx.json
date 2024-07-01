@@ -5263,6 +5263,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 7,
+      "BuildVersion": 1,
+      "RevisionVersion": 867,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1719870650,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2024.7.1.867.zip",
+          "Hash": "mLbJ6xtzSeshR30CDY34eEzyOvueOBekGNpwKlf133g=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
