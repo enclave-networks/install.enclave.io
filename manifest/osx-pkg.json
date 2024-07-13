@@ -2963,6 +2963,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 7,
+      "BuildVersion": 13,
+      "RevisionVersion": 871,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1720900230,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2024.7.13.pkg",
+          "Hash": "cKXBFD2ZvrSUtU7HXBUCvTVCfAC5FSKzYwosreUui3Q=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }

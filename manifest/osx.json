@@ -5303,6 +5303,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 7,
+      "BuildVersion": 13,
+      "RevisionVersion": 871,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1720900230,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-stable-2024.7.13.871.zip",
+          "Hash": "K3sK6oxxkQheDJY/z+kazMuOSxJsjFdmjbNj/ACAKHQ=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
