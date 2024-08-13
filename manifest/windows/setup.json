@@ -4581,6 +4581,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 8,
+      "BuildVersion": 13,
+      "RevisionVersion": 1621,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1723554197,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2024.8.13.1621.exe",
+          "Hash": "k+rscw03vc86MgC2HjriyLAEtOZNrHZdTKnVBWDBTK8=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2024.8.13.1621.exe",
+          "Hash": "k+rscw03vc86MgC2HjriyLAEtOZNrHZdTKnVBWDBTK8=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2024.8.13.1621.exe",
+          "Hash": "k+rscw03vc86MgC2HjriyLAEtOZNrHZdTKnVBWDBTK8=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
