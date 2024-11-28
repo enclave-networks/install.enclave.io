@@ -4807,6 +4807,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2024,
+      "MinorVersion": 11,
+      "BuildVersion": 28,
+      "RevisionVersion": 1699,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1732811074,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-arm64-rc-2024.11.28.1699.msi",
+          "Hash": "lcR/Ot75uq/muzFcTvxsJyzFU7Z9gqpOD9E+wu7LbAs=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2024.11.28.1699.msi",
+          "Hash": "uaYc59f7edQ67yIy6meDQ7HmNFw35UA18BnglCHlicY=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2024.11.28.1699.msi",
+          "Hash": "QleAcOanF2V2U3LjSWKxKiUbukp6X2E1r9tHfUkRlmE=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
