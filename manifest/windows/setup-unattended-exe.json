@@ -3963,6 +3963,33 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 2,
+      "BuildVersion": 7,
+      "RevisionVersion": 1728,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1738946103,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2025.2.7.1728.exe",
+          "Hash": "6c7NvoRC6/Li/YJw5ObBaCUVLPaivzzXHvvksUuysgg=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2025.2.7.1728.exe",
+          "Hash": "VLLrbs/UzPwZ4IGZxStYH3R/uyj0pjWhrnPSCL4sKf8=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
