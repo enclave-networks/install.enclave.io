@@ -11107,6 +11107,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 2,
+      "BuildVersion": 7,
+      "RevisionVersion": 2096,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1738945842,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2025.2.7.2096.tar.gz",
+          "Hash": "uijoRjTQGttILlgtFU4/w3/qMtuHLLtSPmsvPFWEjkw=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2025.2.7.2096.tar.gz",
+          "Hash": "BmbEI4PfQJ3iK3JxXm9ElRsaDXc4tRrbN1EXrtCBOmM=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2025.2.7.2096.tar.gz",
+          "Hash": "mTqN3UHtR2uYIBh9FqkfeITc2+ctjKvH2UDcsiFJLQk=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
