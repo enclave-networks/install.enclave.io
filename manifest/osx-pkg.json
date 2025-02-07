@@ -3223,6 +3223,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 2,
+      "BuildVersion": 7,
+      "RevisionVersion": 900,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1738970136,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-unstable-2025.2.7.pkg",
+          "Hash": "Aik7PI/PfFxda5uOdRVIA8FWveTrOzoXsvvGACMFdz8=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }

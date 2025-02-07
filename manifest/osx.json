@@ -5563,6 +5563,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 2,
+      "BuildVersion": 7,
+      "RevisionVersion": 900,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1738970135,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2025.2.7.900.zip",
+          "Hash": "YsM+3u9V0seUNeqsMCNZSFMXNr77VW2xZ3R8Ehb9IdA=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
