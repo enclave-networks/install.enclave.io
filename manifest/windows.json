@@ -6459,6 +6459,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 5,
+      "BuildVersion": 6,
+      "RevisionVersion": 1757,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1746538336,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-windows-arm64-rc-2025.5.6.1757.zip",
+          "Hash": "eTszr6eKXLNlmWrmUCzqA4T3LC97EsDm78ySW/xuy7c=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2025.5.6.1757.zip",
+          "Hash": "+54/EWKJdIKvFLpQQkMK6YXwAHsugTj6lC3TyiXiJZQ=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-windows-x86-rc-2025.5.6.1757.zip",
+          "Hash": "FivYIgb03fBBLp+qKq/ZyQOPPz6z0xmZ75Xw0s+A3cM=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
