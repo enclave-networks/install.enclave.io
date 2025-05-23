@@ -5683,6 +5683,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 5,
+      "BuildVersion": 23,
+      "RevisionVersion": 918,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1748015607,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-stable-2025.5.23.918.zip",
+          "Hash": "nPCIrgj6xbT8yegQCyi9mnCW/M+fOTLIK9bhd3hQMXU=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
