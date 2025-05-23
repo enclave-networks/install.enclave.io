@@ -5091,6 +5091,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 5,
+      "BuildVersion": 23,
+      "RevisionVersion": 1770,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1748016380,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-2025.5.23.1770.exe",
+          "Hash": "yGUAl+XhXSFay3mNCthan6nKfGRq1hKI8pvD2RHlsGw=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave_setup-2025.5.23.1770.exe",
+          "Hash": "yGUAl+XhXSFay3mNCthan6nKfGRq1hKI8pvD2RHlsGw=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_setup-2025.5.23.1770.exe",
+          "Hash": "yGUAl+XhXSFay3mNCthan6nKfGRq1hKI8pvD2RHlsGw=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
