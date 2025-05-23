@@ -5663,6 +5663,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 5,
+      "BuildVersion": 23,
+      "RevisionVersion": 916,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1748014060,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-unstable-2025.5.23.916.zip",
+          "Hash": "aey2f5t4zzkkaDhw4H2fu0MFpDI/cCigWJKB72Q9CLw=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
