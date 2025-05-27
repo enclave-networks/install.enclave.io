@@ -5159,6 +5159,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 5,
+      "BuildVersion": 27,
+      "RevisionVersion": 1779,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1748361485,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2025.5.27.1779.exe",
+          "Hash": "37YJGHeCT2pNRgf2v3GgJXwqWvtWCiyG+lcJYnC4kwQ=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2025.5.27.1779.exe",
+          "Hash": "37YJGHeCT2pNRgf2v3GgJXwqWvtWCiyG+lcJYnC4kwQ=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2025.5.27.1779.exe",
+          "Hash": "37YJGHeCT2pNRgf2v3GgJXwqWvtWCiyG+lcJYnC4kwQ=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
