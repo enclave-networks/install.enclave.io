@@ -5283,6 +5283,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 6,
+      "BuildVersion": 2,
+      "RevisionVersion": 1782,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1748906582,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-arm64-2025.6.2.1782.msi",
+          "Hash": "kK9/50pAEas73z3ijpYT4KfPuQSniCACJwIBxUADGwY=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-2025.6.2.1782.msi",
+          "Hash": "QVe9UNjKmqMPR29JTOqGRinKumXxvDa0g82opye0o+k=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-2025.6.2.1782.msi",
+          "Hash": "h5K62CnwBx8R9v+AsFVA3KQddLFooE09eD5wSsB/+ZE=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
