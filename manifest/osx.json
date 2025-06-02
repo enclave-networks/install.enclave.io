@@ -5743,6 +5743,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 6,
+      "BuildVersion": 2,
+      "RevisionVersion": 925,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1748905721,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-stable-2025.6.2.925.zip",
+          "Hash": "e1AI+BVUNFkbQsXwWtaSlHSdxgJzrBnmvkuZDPYoMxo=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }

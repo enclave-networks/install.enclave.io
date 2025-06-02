@@ -3403,6 +3403,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 6,
+      "BuildVersion": 2,
+      "RevisionVersion": 925,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1748905721,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2025.6.2.pkg",
+          "Hash": "iSpoohBGJJa7jRuQ4q5Qvg6vRGNGVuo3CBykv9M7o6g=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
