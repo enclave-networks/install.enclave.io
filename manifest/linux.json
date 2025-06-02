@@ -11447,6 +11447,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 6,
+      "BuildVersion": 2,
+      "RevisionVersion": 2150,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1748907819,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2025.6.2.2150.tar.gz",
+          "Hash": "bHTy9UPVwrTwqWdCdVb7i4VkiWx3qxPO82UaXd8WrJc=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2025.6.2.2150.tar.gz",
+          "Hash": "CY9RhTSMpxDH5bCOlOR2mRtsSj/i5zMgLPiWPkFFFFE=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2025.6.2.2150.tar.gz",
+          "Hash": "UTT1B2JTnKVsF9lplI3JzOdchYmYdVY+ajzURLNouKs=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
