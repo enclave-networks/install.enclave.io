@@ -6799,6 +6799,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 7,
+      "BuildVersion": 25,
+      "RevisionVersion": 1808,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1753461765,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-windows-arm64-rc-2025.7.25.1808.zip",
+          "Hash": "Y667TIfLX/N74lsBiNFyKBTTCVqQRM2vlb7HCiScewM=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2025.7.25.1808.zip",
+          "Hash": "clqn7lsaavhgXJxR7kAYEjj3Qx4gmAydIL68mLuh25A=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-windows-x86-rc-2025.7.25.1808.zip",
+          "Hash": "s+3sT2/m7/Xh7oTCXiYz7tMvNXWuq2LyaZo86ahO3WM=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
