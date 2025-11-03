@@ -11651,6 +11651,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2025,
+      "MinorVersion": 11,
+      "BuildVersion": 3,
+      "RevisionVersion": 2229,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1762179536,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2025.11.3.2229.tar.gz",
+          "Hash": "5ddNr2OZX4cH59zo4+Szd8qy5LvR3H/8rr47XN8fLpQ=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2025.11.3.2229.tar.gz",
+          "Hash": "ztxc5gGqhxezHmkWIpLK74M18bdSX9wI+JJIC6KL/MI=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2025.11.3.2229.tar.gz",
+          "Hash": "69qtJAFdJa0osryiyPbrISlFalFJDdLpVyTS17Anziw=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
