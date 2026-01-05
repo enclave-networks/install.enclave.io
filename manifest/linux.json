@@ -11685,6 +11685,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 1,
+      "BuildVersion": 5,
+      "RevisionVersion": 2286,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1767653283,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2026.1.5.2286.tar.gz",
+          "Hash": "PAzf++0VxY7TA/iP6MAv70fyuOOAXuI42Ww0p6cIEZE=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2026.1.5.2286.tar.gz",
+          "Hash": "yz6J7kmhJ4v7uVWEJP08cpMEE7v3hVsl8gQYgZt5kBs=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2026.1.5.2286.tar.gz",
+          "Hash": "hhs+swSXpf1YCV9EPuN5qhpSxENs4Le3ZSwyG+Slxco=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
