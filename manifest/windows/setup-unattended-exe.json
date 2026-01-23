@@ -4449,6 +4449,33 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 1,
+      "BuildVersion": 23,
+      "RevisionVersion": 1937,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1769191015,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2026.1.23.1937.exe",
+          "Hash": "uFCxszXvzP2f8HEe7ko43/oJpQ+M6hQHytQGOjmT64c=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2026.1.23.1937.exe",
+          "Hash": "2SLPQL+fQLXP+tpY6GSNYJm8rJvv1wF5G1gsEc5FddQ=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
