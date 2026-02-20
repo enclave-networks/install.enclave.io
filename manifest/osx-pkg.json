@@ -3663,6 +3663,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 2,
+      "BuildVersion": 20,
+      "RevisionVersion": 952,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1771594201,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-unstable-2026.2.20.pkg",
+          "Hash": "diTMa7xEV21lsJpClDyy1fn1r1w6MV623aEfjaw7IzU=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
