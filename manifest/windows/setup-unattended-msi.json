@@ -5623,6 +5623,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 2,
+      "BuildVersion": 20,
+      "RevisionVersion": 1978,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1771594963,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-arm64-rc-2026.2.20.1978.msi",
+          "Hash": "MVtyKnch7cb5GvIIbp/oweL0L4BUOAAQaV82iacSXB8=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-rc-2026.2.20.1978.msi",
+          "Hash": "Zu4EMZgx0zvuTUCwouoSjQBBVQVftp7BbQnu48+KMPo=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-rc-2026.2.20.1978.msi",
+          "Hash": "HezlSIVz085zSVlWAiOT43E/SEP9gHy0nLmuTvX9Adg=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
