@@ -11889,6 +11889,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 2,
+      "BuildVersion": 20,
+      "RevisionVersion": 2346,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1771594740,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2026.2.20.2346.tar.gz",
+          "Hash": "63qfOkHD+CiYtMMkC1ZomoiccYes+3QhGtBh9I2inaA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2026.2.20.2346.tar.gz",
+          "Hash": "IGCPAZNkZYo0rDtVU4aeTa31OcywGmCRGB5Aw4F7Tg0=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2026.2.20.2346.tar.gz",
+          "Hash": "/9psq2y5edkMxL1OhZ6HD7dazy2STnLxFZxVtbxQ63Q=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
