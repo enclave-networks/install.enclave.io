@@ -5601,6 +5601,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 4,
+      "BuildVersion": 1,
+      "RevisionVersion": 2004,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1775068810,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2026.4.1.2004.exe",
+          "Hash": "qqCij3cYTLoT4x5YwwlKOeSsh4tHPvUKy0tRZCyXM60=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2026.4.1.2004.exe",
+          "Hash": "qqCij3cYTLoT4x5YwwlKOeSsh4tHPvUKy0tRZCyXM60=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_setup-rc-2026.4.1.2004.exe",
+          "Hash": "qqCij3cYTLoT4x5YwwlKOeSsh4tHPvUKy0tRZCyXM60=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
