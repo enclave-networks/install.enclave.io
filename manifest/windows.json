@@ -7105,6 +7105,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 4,
+      "BuildVersion": 14,
+      "RevisionVersion": 2015,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1776187733,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-windows-arm64-rc-2026.4.14.2015.zip",
+          "Hash": "M1uehHBcv2oYfq/2gtn0C70XdQndhLKsgFH7wnvBY88=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2026.4.14.2015.zip",
+          "Hash": "I/0FCKCfW/tawZ0/qLU1oCy9iPwp3MlVtANnhGxbyTI=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-windows-x86-rc-2026.4.14.2015.zip",
+          "Hash": "NsBoiL1oWPNm3UHbO7v+fO0qYYG9yyNV2mVTjSP8vZM=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
