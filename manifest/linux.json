@@ -12025,6 +12025,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 5,
+      "BuildVersion": 23,
+      "RevisionVersion": 2402,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1779576632,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-stable-2026.5.23.2402.tar.gz",
+          "Hash": "sFg2HzAazWdaQ1k2wVV7MkhqudYGRVD9ASBFTsgltjM=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-stable-2026.5.23.2402.tar.gz",
+          "Hash": "IqeDnAlDr2rNLA7WeHdbKg5f4S/1tDzvnx09Z84l6sc=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-stable-2026.5.23.2402.tar.gz",
+          "Hash": "gA90UhycCeB1AgBzjbQ3XuJh1JuAsJZP10ED8TB+9Mc=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
