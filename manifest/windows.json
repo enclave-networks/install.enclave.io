@@ -7139,6 +7139,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 5,
+      "BuildVersion": 23,
+      "RevisionVersion": 2034,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1779576489,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-windows-arm64-2026.5.23.2034.zip",
+          "Hash": "z9E70MT+vBdSWDn1Vcd78IDAQ8Rw/I9/unRb/0x17yU=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-2026.5.23.2034.zip",
+          "Hash": "FS0u0+hZPqA05Z5nok+LK3WLQUkwCB693MiD24KTzJA=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-windows-x86-2026.5.23.2034.zip",
+          "Hash": "dLIlDozJuZC+6okyalY7dvYheEFyAkncGHAyWELJZ7o=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }

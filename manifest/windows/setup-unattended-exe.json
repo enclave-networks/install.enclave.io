@@ -4611,6 +4611,33 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 5,
+      "BuildVersion": 23,
+      "RevisionVersion": 2034,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1779576493,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x64-2026.5.23.2034.exe",
+          "Hash": "PubyVr6HJofCHIZ+Unsns+LYrotKL8DFLfch87FwNUk=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-setup-unattended-x86-2026.5.23.2034.exe",
+          "Hash": "i6axIpXK9RfniIIL9AD/sU26rOZaPboE54pxWHLWebA=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
