@@ -3743,6 +3743,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 5,
+      "BuildVersion": 23,
+      "RevisionVersion": 965,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1779575555,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2026.5.23.pkg",
+          "Hash": "MiZPX9698N4PRqsmbAF7iMxJMfm0BwHw4M3akkSiwXk=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
