@@ -6123,6 +6123,26 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 6,
+      "BuildVersion": 3,
+      "RevisionVersion": 971,
+      "ReleaseType": "GA",
+      "ReleaseDate": 1780509638,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Darwin",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_osx-x64-stable-2026.6.3.971.zip",
+          "Hash": "97H9O02XmrcJIDLTrl8u/Qsa70hMl+P+x1xYMsKL9eE=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
