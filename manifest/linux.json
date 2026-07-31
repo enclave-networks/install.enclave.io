@@ -12161,6 +12161,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 7,
+      "BuildVersion": 31,
+      "RevisionVersion": 2450,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1785513936,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm",
+          "Url": "https://release.enclave.io/enclave_linux-arm-unstable-2026.7.31.2450.tar.gz",
+          "Hash": "Cbw/XEi7+wcyhnOQCHVSqU/KE+GYBrgXNHPj0m+jzyM=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave_linux-arm64-unstable-2026.7.31.2450.tar.gz",
+          "Hash": "cp+0SPxbSJ7xpAW8ujVACsPrUABnfkUmw6ku7fUrFVU=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Linux",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave_linux-x64-unstable-2026.7.31.2450.tar.gz",
+          "Hash": "pFhqObYhtuM/09x6pHvzKK9Kz7xCN4menvO2P7GGFz0=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
