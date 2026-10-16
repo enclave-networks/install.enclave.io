@@ -7343,6 +7343,40 @@
         }
       ],
       "ReleaseNotes": null
+    },
+    {
+      "MajorVersion": 2026,
+      "MinorVersion": 10,
+      "BuildVersion": 16,
+      "RevisionVersion": 2178,
+      "ReleaseType": "RC",
+      "ReleaseDate": 1792168879,
+      "HardStop": -1,
+      "TargetEnvironment": "Production",
+      "Packages": [
+        {
+          "Platform": "Windows",
+          "Architecture": "Arm64",
+          "Url": "https://release.enclave.io/enclave-windows-arm64-rc-2026.10.16.2178.zip",
+          "Hash": "G+uYGNU2NrzWwJRZ/8jvskoEoFdHsmhvvnJVvys4MSM=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X64",
+          "Url": "https://release.enclave.io/enclave-windows-x64-rc-2026.10.16.2178.zip",
+          "Hash": "L3srkRISZufjTPfgouRLVYicD5IaEVVxZDKE5rVbwtk=",
+          "HashAlg": "Sha256"
+        },
+        {
+          "Platform": "Windows",
+          "Architecture": "X86",
+          "Url": "https://release.enclave.io/enclave-windows-x86-rc-2026.10.16.2178.zip",
+          "Hash": "GE4Piv6xzR2ct/LCTzt/tmXLy6EhTn8mEtvUTIsnINQ=",
+          "HashAlg": "Sha256"
+        }
+      ],
+      "ReleaseNotes": null
     }
   ]
 }
